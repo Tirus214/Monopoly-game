@@ -5,7 +5,6 @@
  */
 package Cliente;
 
-import Servidor.PantallaServidor;
 import Servidor.Servidor;
 import java.io.IOException;
 
@@ -19,7 +18,7 @@ public class MainCliente {
      */
     public static void main(String[] args) {
         try{
-        ChatCliente pantalla = new ChatCliente();
+        PantallaJugador pantalla = new PantallaJugador();
         Cliente c = new Cliente(pantalla);
         pantalla.setVisible(true); 
         c.conectar();

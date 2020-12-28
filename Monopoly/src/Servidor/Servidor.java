@@ -16,15 +16,12 @@ import java.util.ArrayList;
  */
 public class Servidor{
     
-    PantallaServidor refPantalla;
     public ArrayList<ThreadServidor> conexiones;
     private boolean running = true;
     private ServerSocket srv;
 
-    public Servidor(PantallaServidor refPantalla) {
-        this.refPantalla = refPantalla;
+    public Servidor() {
         conexiones = new ArrayList<ThreadServidor>();
-        this.refPantalla.setSrv(this);
     }
     
     public void stopserver(){
@@ -36,10 +33,8 @@ public class Servidor{
         try{
             srv = new ServerSocket(35577);
             while (running){
-                refPantalla.addMessage("::Esperando conexión ...");
                 Socket nuevaConexion = srv.accept();
                 contadorDeConexiones++;
-                refPantalla.addMessage(":Conexión " + contadorDeConexiones + "aceptada");
                 
                 // nuevo thread
                 ThreadServidor newThread = new ThreadServidor(nuevaConexion, this);

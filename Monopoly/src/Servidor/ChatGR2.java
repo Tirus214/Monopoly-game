@@ -15,9 +15,7 @@ public class ChatGR2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        PantallaServidor pantalla = new PantallaServidor();
-        Servidor srv = new Servidor(pantalla);
-        pantalla.setVisible(true);
+        Servidor srv = new Servidor();
         srv.runServer();
         
     }

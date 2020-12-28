@@ -14,16 +14,16 @@ import java.net.Socket;
  *
  * @author diemo
  */
-public class ThreadCliente extends Thread{
+public class ThreadJugador extends Thread{
     
     private Socket socketRef;
     public DataInputStream reader;
     public DataOutputStream writer;
     private String nombre;
     private boolean running = true;
-    private ChatCliente refPantalla;
+    private PantallaJugador refPantalla;
 
-    public ThreadCliente(Socket socketRef, ChatCliente refPantalla) throws IOException {
+    public ThreadJugador(Socket socketRef, PantallaJugador refPantalla) throws IOException {
         this.socketRef = socketRef;
         reader = new DataInputStream(socketRef.getInputStream());
         writer = new DataOutputStream(socketRef.getOutputStream());
@@ -43,7 +43,6 @@ public class ThreadCliente extends Thread{
                         String usuario = reader.readUTF();
                         String mensaje = reader.readUTF();
                         //System.out.println("CLIENTE Recibido mensaje: " + mensaje);
-                        refPantalla.addMensaje(usuario+">   " + mensaje);
                     break;
                 }
             } catch (IOException ex) {
