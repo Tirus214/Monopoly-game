@@ -6,6 +6,7 @@
 package Servidor;
 
 import com.sun.webkit.ThemeClient;
+import static java.lang.Thread.sleep;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
@@ -32,7 +33,7 @@ public class Servidor{
         int contadorDeConexiones = 0;
         try{
             srv = new ServerSocket(35577);
-            while (running){
+            while (running || contadorDeConexiones == 6){
                 Socket nuevaConexion = srv.accept();
                 contadorDeConexiones++;
                 
@@ -41,7 +42,7 @@ public class Servidor{
                 conexiones.add(newThread);
                 newThread.start();
                 
-                
+                sleep(1000);
             }
         }
         catch(Exception e)
