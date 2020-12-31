@@ -29,11 +29,11 @@ public class Servidor{
         running = false;
     }
     
-    public void runServer(){
+    public void aceptarConexiones(){
         int contadorDeConexiones = 0;
         try{
             srv = new ServerSocket(35577);
-            while (running || contadorDeConexiones == 6){
+            while (running || contadorDeConexiones < 6){
                 Socket nuevaConexion = srv.accept();
                 contadorDeConexiones++;
                 
@@ -44,6 +44,7 @@ public class Servidor{
                 
                 sleep(1000);
             }
+            iniciarJuego();
         }
         catch(Exception e)
         {
@@ -52,6 +53,11 @@ public class Servidor{
     }
     
     
+    void iniciarJuego(){
+        for (int i = 0; i < conexiones.size(); i++) {
+            conexiones.get(i);
+        }
+    }
     
     
     

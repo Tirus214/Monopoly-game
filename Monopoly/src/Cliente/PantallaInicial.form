@@ -123,6 +123,11 @@
   </Layout>
   <SubComponents>
     <Component class="javax.swing.JButton" name="btn2">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Images/buque.jpg"/>
+        </Property>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn3">
     </Component>
@@ -142,6 +147,14 @@
     <Component class="javax.swing.JButton" name="btn13">
     </Component>
     <Component class="javax.swing.JButton" name="btn1">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Images/bolsaDinero.png"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn1ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn10">
       <Events>

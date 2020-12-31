@@ -9,7 +9,9 @@ import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import javax.imageio.ImageIO;
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 
 /**
  *
@@ -23,24 +25,24 @@ public class PantallaInicial extends javax.swing.JFrame {
      * Creates new form PantallaInicial
      */
     public PantallaInicial() {
+        imagen = "";
+        nombre = "";
         putImagenes();
         initComponents();
     }
     
     
     public void putImagenes(){
-        try{
-            File f = new File("src\\Images\\bolsaDinero.png");
-            BufferedImage img = null;
-            img = ImageIO.read(new File(f.getAbsolutePath()));
-            Image img1 = img.getScaledInstance(btn1.getWidth(), btn1.getHeight(), Image.SCALE_SMOOTH);
-            ImageIcon format = new ImageIcon(img1);
-            btn1.setIcon(format);
-            
-        }
-        catch(Exception e){
-            //return newLabel;
-        }
+        //btn1.setIcon(putIcon("C:\\Users\\Jean Paul\\Google Drive\\TEC\\Semestre II\\POO\\Semana 15\\Monopoly-game\\Monopoly\\src\\Images\\bolsaDinero.png", btn1));
+    }
+    
+    
+    public Icon putIcon(String url, JButton boton){
+        ImageIcon icon = new ImageIcon(getClass().getResource(url));
+        int ancho = boton.getWidth();
+        int alto = boton.getHeight();
+        ImageIcon icon2 = new ImageIcon(icon.getImage().getScaledInstance(ancho, alto, Image.SCALE_DEFAULT));
+        return icon2;
     }
     
 
@@ -73,9 +75,18 @@ public class PantallaInicial extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        btn2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/buque.jpg"))); // NOI18N
+
         btn9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn9ActionPerformed(evt);
+            }
+        });
+
+        btn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/bolsaDinero.png"))); // NOI18N
+        btn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn1ActionPerformed(evt);
             }
         });
 
@@ -216,6 +227,10 @@ public class PantallaInicial extends javax.swing.JFrame {
     private void btnAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarActionPerformed
         this.nombre = txfNombre.getText();
     }//GEN-LAST:event_btnAceptarActionPerformed
+
+    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
+       
+    }//GEN-LAST:event_btn1ActionPerformed
 
     /**
      * @param args the command line arguments

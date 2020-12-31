@@ -5,10 +5,16 @@
  */
 package Cliente;
 
+import Servidor.Paquete;
+import Servidor.Servidor;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.io.ObjectInput;
+import java.io.ObjectOutput;
 import java.net.Socket;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -17,36 +23,45 @@ import java.net.Socket;
 public class ThreadJugador extends Thread{
     
     private Socket socketRef;
-    public DataInputStream reader;
-    public DataOutputStream writer;
+    private ObjectInput reader;
+    ObjectOutput writer;
     private String nombre;
     private boolean running = true;
+    Servidor server;
+    Paquete paquete;
     private PantallaJugador refPantalla;
 
     public ThreadJugador(Socket socketRef, PantallaJugador refPantalla) throws IOException {
         this.socketRef = socketRef;
-        reader = new DataInputStream(socketRef.getInputStream());
-        writer = new DataOutputStream(socketRef.getOutputStream());
         this.refPantalla = refPantalla;
     }
     
     public void run (){
         
-        int instruccionId = 1;
         while (running){
             try {
-                instruccionId = reader.readInt(); // esperar hasta que reciba un entero
+                paquete = (Paquete) reader.readObject(); // esperar hasta que reciba un entero
                 
-                switch (instruccionId){
-
-                    case 2: // pasan un mensaje por el chat
-                        String usuario = reader.readUTF();
-                        String mensaje = reader.readUTF();
-                        //System.out.println("CLIENTE Recibido mensaje: " + mensaje);
-                    break;
+                if(paquete.iniciar){
+                    
                 }
+                else if(paquete.comprar){
+                    
+                }
+                else if(paquete.hipotecar){
+                    
+                }
+                else if(paquete.pasarSalida){
+                    
+                }
+                else if(paquete.tirar){
+                    
+                }
+                
             } catch (IOException ex) {
                 
+            } catch (ClassNotFoundException ex) {
+                Logger.getLogger(ThreadJugador.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }

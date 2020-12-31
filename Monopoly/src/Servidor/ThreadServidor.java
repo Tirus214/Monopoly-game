@@ -8,6 +8,8 @@ package Servidor;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.io.ObjectInput;
+import java.io.ObjectOutput;
 import java.net.Socket;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -19,46 +21,47 @@ import java.util.logging.Logger;
 class ThreadServidor extends Thread{
     
     private Socket socketRef;
-    private DataInputStream reader;
-    private DataOutputStream writer;
+    private ObjectInput reader;
+    private ObjectOutput writer;
     private String nombre;
     private boolean running = true;
     Servidor server;
+    Paquete paquete;
 
     public ThreadServidor(Socket socketRef, Servidor server) throws IOException {
         this.socketRef = socketRef;
-        reader = new DataInputStream(socketRef.getInputStream());
-        writer = new DataOutputStream(socketRef.getOutputStream());
         this.server = server;
-        
+        paquete = new Paquete();
     }
     
     public void run (){
         
-        int instruccionId = 1;
         while (running){
             try {
-                instruccionId = reader.readInt(); // esperar hasta que reciba un entero
+                paquete = (Paquete) reader.readObject(); // esperar hasta que reciba un entero
                 
-                switch (instruccionId){
-                    case 1: // pasan el nombre del usuario
-                        nombre = reader.readUTF();                        
-                    break;
-                    case 2: // pasan un mensaje por el chat
-                        String mensaje = reader.readUTF();
-                        
-                        for (int i = 0; i < server.conexiones.size(); i++) {
-                            ThreadServidor current = server.conexiones.get(i);
-                            current.writer.writeInt(2);
-                            current.writer.writeUTF(nombre);
-                            current.writer.writeUTF(mensaje);
-                        }
-                        
-                    break;
+                if(paquete.iniciar){
+                    
                 }
+                else if(paquete.comprar){
+                    
+                }
+                else if(paquete.hipotecar){
+                    
+                }
+                else if(paquete.pasarSalida){
+                    
+                }
+                else if(paquete.tirar){
+                    
+                }
+                
             } catch (IOException ex) {
                 
+            } catch (ClassNotFoundException ex) {
+                Logger.getLogger(ThreadServidor.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }
+
 }

@@ -9,14 +9,14 @@ package Servidor;
  *
  * @author diemo
  */
-public class ChatGR2 {
+public class MainServidor {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         Servidor srv = new Servidor();
-        srv.runServer();
+        srv.aceptarConexiones();
         
     }
     
