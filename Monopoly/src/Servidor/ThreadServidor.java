@@ -40,7 +40,7 @@ class ThreadServidor extends Thread{
             try {
                 paquete = (Paquete) reader.readObject(); // esperar hasta que reciba un entero
                 
-                if(paquete.iniciar){
+                if(paquete.iniciarPartida){
                     
                 }
                 else if(paquete.comprar){

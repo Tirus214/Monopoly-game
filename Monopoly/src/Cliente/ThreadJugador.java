@@ -42,7 +42,7 @@ public class ThreadJugador extends Thread{
             try {
                 paquete = (Paquete) reader.readObject(); // esperar hasta que reciba un entero
                 
-                if(paquete.iniciar){
+                if(paquete.iniciarTodos){
                     
                 }
                 else if(paquete.comprar){

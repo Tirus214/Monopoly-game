@@ -18,11 +18,8 @@ public class MainCliente {
      */
     public static void main(String[] args) {
         try{
-        PantallaJugador pantalla = new PantallaJugador();
-        Cliente c = new Cliente(pantalla);
+        PantallaInicial pantalla = new PantallaInicial();
         pantalla.setVisible(true); 
-        c.conectar();
-               
         }
         catch(Exception e){
             

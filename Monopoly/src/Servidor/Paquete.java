@@ -12,7 +12,8 @@ package Servidor;
 public class Paquete {
     public String mensaje;
     public boolean sms;
-    public boolean iniciar;
+    public boolean iniciarPartida;
+    public boolean iniciarTodos;
     public boolean tirar;
     public boolean comprar;
     public boolean hipotecar;
@@ -21,7 +22,8 @@ public class Paquete {
     public Paquete(){
         mensaje = "";
         sms = false;
-        iniciar = false;
+        iniciarPartida = false;
+        iniciarTodos = false;
         comprar = false;
         hipotecar = false;
         pasarSalida = false;
@@ -30,7 +32,8 @@ public class Paquete {
     public void clear(){
         mensaje = "";
         sms = false;
-        iniciar = false;
+        iniciarPartida = false;
+        iniciarTodos = false;
         comprar = false;
         hipotecar = false;
         pasarSalida = false;

@@ -8,7 +8,6 @@ package Cliente;
 import java.io.IOException;
 import java.net.Socket;
 import javax.swing.JOptionPane;
-import Servidor.Enumerable;
 import Servidor.Paquete;
 
 /**
@@ -20,11 +19,15 @@ public class Cliente {
     Socket socketRef;
     PantallaJugador refPantalla;
     public ThreadJugador hiloCliente;
-    private Paquete paquete;   
+    private Paquete paquete;
+    public String nombre;
+    public String imagen;
 
-    public Cliente(PantallaJugador refPantalla) {
+    public Cliente(PantallaJugador refPantalla, String nombre, String imagen) {
         this.refPantalla = refPantalla;
         refPantalla.setRefCliente(this);
+        this.imagen = imagen;
+        this.nombre = nombre;
     }
     
     public void conectar(){
@@ -35,8 +38,7 @@ public class Cliente {
             hiloCliente = new ThreadJugador(socketRef, refPantalla);
             hiloCliente.start();
             System.out.println("start");
-            String nombre = JOptionPane.showInputDialog("Introduzca su nombre:");
-            paquete.iniciar = true;
+            paquete.iniciarPartida = true;
             paquete.mensaje = nombre; //instruccion para el switch del thraed servidor
             hiloCliente.writer.writeObject(paquete);
         }
