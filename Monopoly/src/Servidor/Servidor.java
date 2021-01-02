@@ -41,8 +41,9 @@ public class Servidor{
                 ThreadServidor newThread = new ThreadServidor(nuevaConexion, this);
                 conexiones.add(newThread);
                 newThread.start();
-                
-                sleep(1000);
+                if (contadorDeConexiones == 1){
+                    
+                }
             }
             iniciarJuego();
         }

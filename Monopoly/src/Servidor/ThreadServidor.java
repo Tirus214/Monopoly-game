@@ -26,33 +26,35 @@ class ThreadServidor extends Thread{
     private String nombre;
     private boolean running = true;
     Servidor server;
-    Paquete paquete;
+    Paquete paqueteLectura;
+    Paquete paqueteEscritura;
 
     public ThreadServidor(Socket socketRef, Servidor server) throws IOException {
         this.socketRef = socketRef;
         this.server = server;
-        paquete = new Paquete();
+        paqueteLectura = new Paquete();
+        paqueteEscritura = new Paquete();
     }
     
     public void run (){
         
         while (running){
             try {
-                paquete = (Paquete) reader.readObject(); // esperar hasta que reciba un entero
+                paqueteLectura = (Paquete) reader.readObject(); // esperar hasta que reciba un entero
                 
-                if(paquete.iniciarPartida){
+                if(paqueteLectura.iniciarPartida){
                     
                 }
-                else if(paquete.comprar){
+                else if(paqueteLectura.comprar){
                     
                 }
-                else if(paquete.hipotecar){
+                else if(paqueteLectura.hipotecar){
                     
                 }
-                else if(paquete.pasarSalida){
+                else if(paqueteLectura.pasarSalida){
                     
                 }
-                else if(paquete.tirar){
+                else if(paqueteLectura.tirar){
                     
                 }
                 

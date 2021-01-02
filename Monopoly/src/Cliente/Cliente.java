@@ -22,6 +22,7 @@ public class Cliente {
     private Paquete paquete;
     public String nombre;
     public String imagen;
+    boolean admin;
 
     public Cliente(PantallaJugador refPantalla, String nombre, String imagen) {
         this.refPantalla = refPantalla;
@@ -36,11 +37,10 @@ public class Cliente {
         
             socketRef = new Socket("localhost", 35577);
             hiloCliente = new ThreadJugador(socketRef, refPantalla);
+            hiloCliente.nombre = nombre;
+            hiloCliente.imagen = imagen;
             hiloCliente.start();
             System.out.println("start");
-            paquete.iniciarPartida = true;
-            paquete.mensaje = nombre; //instruccion para el switch del thraed servidor
-            hiloCliente.writer.writeObject(paquete);
         }
         catch(Exception e){
             System.out.println(e.getMessage());

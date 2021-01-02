@@ -10,8 +10,11 @@ package Servidor;
  * @author Jean Paul
  */
 public class Paquete {
+    public String nombre;
+    public String imagen;
     public String mensaje;
     public boolean sms;
+    public boolean iniciarJudador;
     public boolean iniciarPartida;
     public boolean iniciarTodos;
     public boolean tirar;
@@ -22,6 +25,7 @@ public class Paquete {
     public Paquete(){
         mensaje = "";
         sms = false;
+        iniciarJudador = false;
         iniciarPartida = false;
         iniciarTodos = false;
         comprar = false;
@@ -32,6 +36,7 @@ public class Paquete {
     public void clear(){
         mensaje = "";
         sms = false;
+        iniciarJudador = false;
         iniciarPartida = false;
         iniciarTodos = false;
         comprar = false;

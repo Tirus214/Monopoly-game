@@ -7,8 +7,6 @@ package Cliente;
 
 import Servidor.Paquete;
 import Servidor.Servidor;
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.ObjectInput;
 import java.io.ObjectOutput;
@@ -25,36 +23,50 @@ public class ThreadJugador extends Thread{
     private Socket socketRef;
     private ObjectInput reader;
     ObjectOutput writer;
-    private String nombre;
+    String nombre;
     private boolean running = true;
     Servidor server;
-    Paquete paquete;
+    Paquete paqueteLectura;
+    Paquete paqueteEscritura;
     private PantallaJugador refPantalla;
+    public boolean admin;
+    String imagen;
 
     public ThreadJugador(Socket socketRef, PantallaJugador refPantalla) throws IOException {
         this.socketRef = socketRef;
         this.refPantalla = refPantalla;
+        paqueteLectura = new Paquete();
+        paqueteEscritura = new Paquete();
+        nombre = "";
+        imagen = "";
     }
     
     public void run (){
-        
+        paqueteEscritura.imagen = imagen;
+        paqueteEscritura.nombre = nombre;
+        paqueteEscritura.iniciarJudador = true;
+        try {
+            writer.writeObject(paqueteEscritura);
+        } catch (IOException ex) {
+            
+        }
         while (running){
             try {
-                paquete = (Paquete) reader.readObject(); // esperar hasta que reciba un entero
+                paqueteLectura = (Paquete) reader.readObject(); // esperar hasta que reciba un entero
                 
-                if(paquete.iniciarTodos){
+                if(paqueteLectura.iniciarTodos){
                     
                 }
-                else if(paquete.comprar){
+                else if(paqueteLectura.comprar){
                     
                 }
-                else if(paquete.hipotecar){
+                else if(paqueteLectura.hipotecar){
                     
                 }
-                else if(paquete.pasarSalida){
+                else if(paqueteLectura.pasarSalida){
                     
                 }
-                else if(paquete.tirar){
+                else if(paqueteLectura.tirar){
                     
                 }
                 
