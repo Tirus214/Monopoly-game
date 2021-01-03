@@ -5,11 +5,9 @@
  */
 package Servidor;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
 import java.io.IOException;
-import java.io.ObjectInput;
-import java.io.ObjectOutput;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -21,8 +19,8 @@ import java.util.logging.Logger;
 class ThreadServidor extends Thread{
     
     private Socket socketRef;
-    private ObjectInput reader;
-    private ObjectOutput writer;
+    private ObjectInputStream reader;
+    private ObjectOutputStream writer;
     private String nombre;
     private boolean running = true;
     Servidor server;
@@ -34,6 +32,8 @@ class ThreadServidor extends Thread{
         this.server = server;
         paqueteLectura = new Paquete();
         paqueteEscritura = new Paquete();
+        reader = new ObjectInputStream(socketRef.getInputStream());
+        writer = new ObjectOutputStream(socketRef.getOutputStream());
     }
     
     public void run (){
@@ -41,6 +41,10 @@ class ThreadServidor extends Thread{
         while (running){
             try {
                 paqueteLectura = (Paquete) reader.readObject(); // esperar hasta que reciba un entero
+                
+                if(paqueteLectura.iniciarJudador){
+                    System.out.println(paqueteLectura.nombre + "    " + paqueteLectura.imagen);
+                }
                 
                 if(paqueteLectura.iniciarPartida){
                     

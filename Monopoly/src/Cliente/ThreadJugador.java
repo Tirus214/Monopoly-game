@@ -8,8 +8,8 @@ package Cliente;
 import Servidor.Paquete;
 import Servidor.Servidor;
 import java.io.IOException;
-import java.io.ObjectInput;
-import java.io.ObjectOutput;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -21,8 +21,8 @@ import java.util.logging.Logger;
 public class ThreadJugador extends Thread{
     
     private Socket socketRef;
-    private ObjectInput reader;
-    ObjectOutput writer;
+    private ObjectInputStream reader;
+    private ObjectOutputStream writer;
     String nombre;
     private boolean running = true;
     Servidor server;
@@ -39,6 +39,8 @@ public class ThreadJugador extends Thread{
         paqueteEscritura = new Paquete();
         nombre = "";
         imagen = "";
+        reader = new ObjectInputStream(socketRef.getInputStream());
+        writer = new ObjectOutputStream(socketRef.getOutputStream());
     }
     
     public void run (){
@@ -48,8 +50,9 @@ public class ThreadJugador extends Thread{
         try {
             writer.writeObject(paqueteEscritura);
         } catch (IOException ex) {
-            
+            Logger.getLogger(ThreadJugador.class.getName()).log(Level.SEVERE, null, ex);
         }
+
         while (running){
             try {
                 paqueteLectura = (Paquete) reader.readObject(); // esperar hasta que reciba un entero
