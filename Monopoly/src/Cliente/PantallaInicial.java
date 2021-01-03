@@ -5,13 +5,16 @@
  */
 package Cliente;
 
+import java.awt.Color;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.util.ArrayList;
 import javax.imageio.ImageIO;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -22,46 +25,53 @@ public class PantallaInicial extends javax.swing.JFrame {
     String nombre;
     PantallaJugador pantalla;
     
-    /**
-     * Creates new form PantallaInicial
-     */
+    
+    
+    
     public PantallaInicial() {
         imagen = "";
         nombre = "";
         pantalla = new PantallaJugador();
         initComponents();
-        
-        putImagenes();
     }
     
-    
-    private void putImagenes(){
-        btn1.setIcon(putIcon("/Images/carretilla.png", btn1));
-        btn2.setIcon(putIcon("/Images/buque.png", btn2));
-        btn3.setIcon(putIcon("/Images/saco.png", btn3));
-        btn4.setIcon(putIcon("/Images/jinete.png", btn4));
-        btn5.setIcon(putIcon("/Images/carro.png", btn5));
-        btn6.setIcon(putIcon("/Images/tren.png", btn6));
-        btn7.setIcon(putIcon("/Images/dedal.png", btn7));
-        btn8.setIcon(putIcon("/Images/canon.png", btn8));
-        btn9.setIcon(putIcon("/Images/zapato.png", btn9));
-        btn10.setIcon(putIcon("/Images/perro.png", btn10));
-        btn11.setIcon(putIcon("/Images/sombrero.png", btn11));
-        btn12.setIcon(putIcon("/Images/plancha.png", btn12));
-        btn13.setIcon(putIcon("/Images/gato.png", btn13));
-        btn14.setIcon(putIcon("/Images/guitarra.png", btn14));
+    private void pintarFichaSeleccionada(JButton boton){
+        despintarFichas();
+        boton.setContentAreaFilled(true);
+        boton.setBackground(Color.yellow);
     }
     
-    
-    private Icon putIcon(String url, JButton boton){
-        ImageIcon icon = new ImageIcon(getClass().getResource(url));
-        int ancho = boton.getWidth();
-        int alto = boton.getHeight();
-        ImageIcon icon2 = new ImageIcon(icon.getImage().getScaledInstance(ancho, alto, Image.SCALE_AREA_AVERAGING));
-        return icon2;
+    private void despintarFichas(){
+        btn1.setContentAreaFilled(false);
+        btn1.setBackground(Color.gray);
+        btn2.setContentAreaFilled(false);
+        btn2.setBackground(Color.gray);
+        btn3.setContentAreaFilled(false);
+        btn3.setBackground(Color.gray);
+        btn4.setContentAreaFilled(false);
+        btn4.setBackground(Color.gray);
+        btn5.setContentAreaFilled(false);
+        btn5.setBackground(Color.gray);
+        btn6.setContentAreaFilled(false);
+        btn6.setBackground(Color.gray);
+        btn7.setContentAreaFilled(false);
+        btn7.setBackground(Color.gray);
+        btn8.setContentAreaFilled(false);
+        btn8.setBackground(Color.gray);
+        btn9.setContentAreaFilled(false);
+        btn9.setBackground(Color.gray);
+        btn10.setContentAreaFilled(false);
+        btn10.setBackground(Color.gray);
+        btn11.setContentAreaFilled(false);
+        btn11.setBackground(Color.gray);
+        btn12.setContentAreaFilled(false);
+        btn12.setBackground(Color.gray);
+        btn13.setContentAreaFilled(false);
+        btn13.setBackground(Color.gray);
+        btn14.setContentAreaFilled(false);
+        btn14.setBackground(Color.gray);
     }
     
-
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -93,111 +103,140 @@ public class PantallaInicial extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
-        btn14.setBackground(new java.awt.Color(255, 255, 255));
-        btn14.setOpaque(false);
+        btn14.setBackground(new java.awt.Color(204, 204, 204));
+        btn14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/guitarra.png"))); // NOI18N
+        btn14.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btn14.setContentAreaFilled(false);
         btn14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn14ActionPerformed(evt);
             }
         });
 
-        btn13.setBackground(new java.awt.Color(255, 255, 255));
-        btn13.setOpaque(false);
+        btn13.setBackground(new java.awt.Color(204, 204, 204));
+        btn13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/gato.png"))); // NOI18N
+        btn13.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btn13.setContentAreaFilled(false);
         btn13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn13ActionPerformed(evt);
             }
         });
 
-        btn12.setBackground(new java.awt.Color(255, 255, 255));
-        btn12.setOpaque(false);
+        btn12.setBackground(new java.awt.Color(204, 204, 204));
+        btn12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/plancha.png"))); // NOI18N
+        btn12.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btn12.setContentAreaFilled(false);
         btn12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn12ActionPerformed(evt);
             }
         });
 
-        btn11.setBackground(new java.awt.Color(255, 255, 255));
-        btn11.setOpaque(false);
+        btn11.setBackground(new java.awt.Color(204, 204, 204));
+        btn11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/sombrero.png"))); // NOI18N
+        btn11.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btn11.setContentAreaFilled(false);
         btn11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn11ActionPerformed(evt);
             }
         });
 
-        btn10.setBackground(new java.awt.Color(255, 255, 255));
-        btn10.setOpaque(false);
+        btn10.setBackground(new java.awt.Color(204, 204, 204));
+        btn10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/perro.png"))); // NOI18N
+        btn10.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btn10.setContentAreaFilled(false);
         btn10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn10ActionPerformed(evt);
             }
         });
 
-        btn9.setBackground(new java.awt.Color(255, 255, 255));
-        btn9.setOpaque(false);
+        btn9.setBackground(new java.awt.Color(204, 204, 204));
+        btn9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/zapato.png"))); // NOI18N
+        btn9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btn9.setContentAreaFilled(false);
         btn9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn9ActionPerformed(evt);
             }
         });
 
-        btn8.setBackground(new java.awt.Color(255, 255, 255));
-        btn8.setOpaque(false);
+        btn8.setBackground(new java.awt.Color(204, 204, 204));
+        btn8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/canon.png"))); // NOI18N
+        btn8.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btn8.setContentAreaFilled(false);
         btn8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn8ActionPerformed(evt);
             }
         });
 
-        btn7.setBackground(new java.awt.Color(255, 255, 255));
-        btn7.setOpaque(false);
+        btn7.setBackground(new java.awt.Color(204, 204, 204));
+        btn7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/dedal.png"))); // NOI18N
+        btn7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btn7.setContentAreaFilled(false);
         btn7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn7ActionPerformed(evt);
             }
         });
 
-        btn6.setBackground(new java.awt.Color(255, 255, 255));
+        btn6.setBackground(new java.awt.Color(204, 204, 204));
+        btn6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/tren.png"))); // NOI18N
+        btn6.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btn6.setContentAreaFilled(false);
         btn6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn6ActionPerformed(evt);
             }
         });
 
-        btn5.setBackground(new java.awt.Color(255, 255, 255));
-        btn5.setOpaque(false);
+        btn5.setBackground(new java.awt.Color(204, 204, 204));
+        btn5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/carro.png"))); // NOI18N
+        btn5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btn5.setContentAreaFilled(false);
         btn5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn5ActionPerformed(evt);
             }
         });
 
-        btn4.setBackground(new java.awt.Color(255, 255, 255));
-        btn4.setOpaque(false);
+        btn4.setBackground(new java.awt.Color(204, 204, 204));
+        btn4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/jinete.png"))); // NOI18N
+        btn4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btn4.setContentAreaFilled(false);
         btn4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn4ActionPerformed(evt);
             }
         });
 
-        btn3.setBackground(new java.awt.Color(255, 255, 255));
-        btn3.setOpaque(false);
+        btn3.setBackground(new java.awt.Color(204, 204, 204));
+        btn3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/saco.png"))); // NOI18N
+        btn3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btn3.setContentAreaFilled(false);
         btn3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn3ActionPerformed(evt);
             }
         });
 
-        btn2.setBackground(new java.awt.Color(255, 255, 255));
-        btn2.setOpaque(false);
+        btn2.setBackground(new java.awt.Color(204, 204, 204));
+        btn2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/buque.png"))); // NOI18N
+        btn2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btn2.setContentAreaFilled(false);
         btn2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn2ActionPerformed(evt);
             }
         });
 
-        btn1.setBackground(new java.awt.Color(255, 255, 255));
-        btn1.setOpaque(false);
+        btn1.setBackground(new java.awt.Color(204, 204, 204));
+        btn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/carretilla.png"))); // NOI18N
+        btn1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btn1.setContentAreaFilled(false);
         btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn1ActionPerformed(evt);
@@ -213,7 +252,12 @@ public class PantallaInicial extends javax.swing.JFrame {
         lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/logo.png"))); // NOI18N
         lblLogo.setLabelFor(btn1);
 
-        btnAceptar.setText("Aceptar");
+        btnAceptar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btnAceptar.png"))); // NOI18N
+        btnAceptar.setBorder(null);
+        btnAceptar.setBorderPainted(false);
+        btnAceptar.setContentAreaFilled(false);
+        btnAceptar.setFocusPainted(false);
+        btnAceptar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btnAceptarPressed.png"))); // NOI18N
         btnAceptar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAceptarActionPerformed(evt);
@@ -226,7 +270,8 @@ public class PantallaInicial extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(51, 51, 51));
         jLabel2.setText("Nombre:");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -275,7 +320,7 @@ public class PantallaInicial extends javax.swing.JFrame {
                                 .addGap(35, 35, 35)
                                 .addComponent(txfNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnAceptar, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(btnAceptar)))
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 575, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(0, 36, Short.MAX_VALUE))
         );
@@ -288,30 +333,35 @@ public class PantallaInicial extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(39, 39, 39)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btn6, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+                    .addComponent(btn6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btn5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btn4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btn3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btn2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btn1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btn1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btn8, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
-                    .addComponent(btn7, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
-                    .addComponent(btn9, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
-                    .addComponent(btn11, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
-                    .addComponent(btn10, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
-                    .addComponent(btn12, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE))
+                    .addComponent(btn8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btn13, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn14, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(51, 51, 51)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txfNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnAceptar, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(46, Short.MAX_VALUE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(51, 51, 51)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txfNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(71, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnAceptar)
+                        .addGap(63, 63, 63))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -338,68 +388,88 @@ public class PantallaInicial extends javax.swing.JFrame {
 
     private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
         imagen = "/Images/zapato.png";
+        pintarFichaSeleccionada(btn9);
     }//GEN-LAST:event_btn9ActionPerformed
 
     private void btn10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn10ActionPerformed
         imagen = "/Images/perro.png";
+        pintarFichaSeleccionada(btn10);
     }//GEN-LAST:event_btn10ActionPerformed
 
     private void btn12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn12ActionPerformed
         imagen = "/Images/plancha.png";
+        pintarFichaSeleccionada(btn12);
     }//GEN-LAST:event_btn12ActionPerformed
 
     private void btnAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarActionPerformed
+        
         this.nombre = txfNombre.getText();
         if(imagen != ""){
             Cliente c = new Cliente(pantalla, nombre, imagen);
             pantalla.setVisible(true);
-            pantalla.setImagenFicha(imagen);
+            pantalla.setImagenFicha(imagen); //coloca la ficha escogida en la pantalla
+            pantalla.setTitle(nombre);       //coloca el nombre del jugador en la ventana
+            pantalla.setNombreJugador(nombre); //coloca el nombre del jugador en el label
             c.conectar();
+            this.dispose();
         }
+        else
+            JOptionPane.showMessageDialog(null, "Primero debe seleccionar una ficha.");
     }//GEN-LAST:event_btnAceptarActionPerformed
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
         imagen = "/Images/carretilla.png";
+        pintarFichaSeleccionada(btn1);
     }//GEN-LAST:event_btn1ActionPerformed
 
     private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
         imagen = "/Images/buque.png";
+        pintarFichaSeleccionada(btn2);
     }//GEN-LAST:event_btn2ActionPerformed
 
     private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
         imagen = "/Images/saco.png";
+        pintarFichaSeleccionada(btn3);
     }//GEN-LAST:event_btn3ActionPerformed
 
     private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
         imagen = "/Images/jinete.png";
+        pintarFichaSeleccionada(btn4);
     }//GEN-LAST:event_btn4ActionPerformed
 
     private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
         imagen = "/Images/carro.png";
+        pintarFichaSeleccionada(btn5);
     }//GEN-LAST:event_btn5ActionPerformed
 
     private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
         imagen = "/Images/tren.png";
+        pintarFichaSeleccionada(btn6);
     }//GEN-LAST:event_btn6ActionPerformed
 
     private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
         imagen = "/Images/dedal.png";
+        pintarFichaSeleccionada(btn7);
     }//GEN-LAST:event_btn7ActionPerformed
 
     private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
         imagen = "/Images/canon.png";
+        pintarFichaSeleccionada(btn8);
     }//GEN-LAST:event_btn8ActionPerformed
 
     private void btn11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn11ActionPerformed
         imagen = "/Images/sombrero.png";
+        pintarFichaSeleccionada(btn11);
     }//GEN-LAST:event_btn11ActionPerformed
 
     private void btn13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn13ActionPerformed
         imagen = "/Images/gato.png";
+        pintarFichaSeleccionada(btn13);
     }//GEN-LAST:event_btn13ActionPerformed
 
     private void btn14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn14ActionPerformed
         imagen = "/Images/guitarra.png";
+        pintarFichaSeleccionada(btn14);
     }//GEN-LAST:event_btn14ActionPerformed
 
     /**

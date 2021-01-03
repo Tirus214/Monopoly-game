@@ -137,7 +137,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="$Cant dinero"/>
+            <Property name="text" type="java.lang.String" value="$0"/>
           </Properties>
         </Component>
       </SubComponents>
@@ -184,9 +184,10 @@
                           <Component id="btnMoverFicha" alignment="1" min="-2" pref="70" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
                           <Component id="label1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="lblTurno" min="-2" pref="34" max="-2" attributes="0"/>
+                          <Component id="lblTurno" min="-2" pref="29" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace pref="43" max="32767" attributes="0"/>

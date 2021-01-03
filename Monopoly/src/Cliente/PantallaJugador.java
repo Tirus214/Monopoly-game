@@ -24,6 +24,7 @@ public class PantallaJugador extends javax.swing.JFrame {
 
     Cliente refCliente;
     String imagenFicha;
+    String nombre;
     
     
     public PantallaJugador() {
@@ -37,6 +38,7 @@ public class PantallaJugador extends javax.swing.JFrame {
     public void setImagenFicha(String imagenFicha){
         this.imagenFicha = imagenFicha;
         lblFicha.setIcon(putIcon(imagenFicha, lblFicha));
+        
     }
     
     private Icon putIcon(String url, JLabel label){
@@ -45,6 +47,11 @@ public class PantallaJugador extends javax.swing.JFrame {
         int alto = label.getHeight();
         ImageIcon icon2 = new ImageIcon(icon.getImage().getScaledInstance(ancho, alto, Image.SCALE_AREA_AVERAGING));
         return icon2;
+    }
+    
+    public void setNombreJugador(String nombre){
+        this.nombre = nombre;
+        lblNombreJugador.setText(nombre);
     }
     
     
@@ -126,7 +133,7 @@ public class PantallaJugador extends javax.swing.JFrame {
         lblCantidadDinero.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         lblCantidadDinero.setForeground(new java.awt.Color(255, 255, 255));
         lblCantidadDinero.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblCantidadDinero.setText("$Cant dinero");
+        lblCantidadDinero.setText("$0");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -226,9 +233,10 @@ public class PantallaJugador extends javax.swing.JFrame {
                         .addComponent(btnLanzarDados, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnMoverFicha, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(11, 11, 11)
                         .addComponent(label1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblTurno, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(lblTurno, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(43, Short.MAX_VALUE))
         );
 
