@@ -35,7 +35,7 @@ public class PantallaInicial extends javax.swing.JFrame {
     }
     
     
-    public void putImagenes(){
+    private void putImagenes(){
         btn1.setIcon(putIcon("/Images/carretilla.png", btn1));
         btn2.setIcon(putIcon("/Images/buque.png", btn2));
         btn3.setIcon(putIcon("/Images/saco.png", btn3));
@@ -53,7 +53,7 @@ public class PantallaInicial extends javax.swing.JFrame {
     }
     
     
-    public Icon putIcon(String url, JButton boton){
+    private Icon putIcon(String url, JButton boton){
         ImageIcon icon = new ImageIcon(getClass().getResource(url));
         int ancho = boton.getWidth();
         int alto = boton.getHeight();
@@ -353,6 +353,7 @@ public class PantallaInicial extends javax.swing.JFrame {
         if(imagen != ""){
             Cliente c = new Cliente(pantalla, nombre, imagen);
             pantalla.setVisible(true);
+            pantalla.setImagenFicha(imagen);
             c.conectar();
         }
     }//GEN-LAST:event_btnAceptarActionPerformed
