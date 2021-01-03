@@ -117,27 +117,27 @@
                   <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="btn2" min="-2" pref="69" max="-2" attributes="0"/>
-                      <Component id="btn1" min="-2" pref="69" max="-2" attributes="0"/>
-                      <Component id="btn3" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
-                      <Component id="btn4" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
-                      <Component id="btn5" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
-                      <Component id="btn6" min="-2" pref="69" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="btn6" pref="70" max="32767" attributes="0"/>
+                      <Component id="btn5" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btn4" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btn3" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btn2" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btn1" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="btn8" pref="70" max="32767" attributes="0"/>
+                      <Component id="btn7" pref="70" max="32767" attributes="0"/>
+                      <Component id="btn9" alignment="0" pref="70" max="32767" attributes="0"/>
+                      <Component id="btn11" alignment="0" pref="70" max="32767" attributes="0"/>
+                      <Component id="btn10" pref="70" max="32767" attributes="0"/>
+                      <Component id="btn12" alignment="0" pref="70" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="btn8" min="-2" pref="69" max="-2" attributes="0"/>
-                      <Component id="btn7" min="-2" pref="69" max="-2" attributes="0"/>
-                      <Component id="btn9" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
-                      <Component id="btn11" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
-                      <Component id="btn12" min="-2" pref="69" max="-2" attributes="0"/>
-                      <Component id="btn10" min="-2" pref="69" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="btn13" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
-                      <Component id="btn14" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                      <Component id="btn13" alignment="0" min="-2" pref="70" max="-2" attributes="0"/>
+                      <Component id="btn14" alignment="0" min="-2" pref="70" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -153,6 +153,9 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="btn14">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
           <Events>
@@ -161,6 +164,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btn13">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
           <Events>
@@ -169,6 +175,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btn12">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
           <Events>
@@ -177,6 +186,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btn11">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
           <Events>
@@ -185,6 +197,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btn10">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
           <Events>
@@ -193,6 +208,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btn9">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
           <Events>
@@ -201,6 +219,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btn8">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
           <Events>
@@ -209,6 +230,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btn7">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
           <Events>
@@ -216,12 +240,20 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn6">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn6ActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn5">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
           <Events>
@@ -230,6 +262,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btn4">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
           <Events>
@@ -238,6 +273,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btn3">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
           <Events>
@@ -246,6 +284,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btn2">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
           <Events>
@@ -254,6 +295,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btn1">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
           <Events>
