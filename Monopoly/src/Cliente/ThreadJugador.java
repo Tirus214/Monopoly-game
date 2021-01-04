@@ -29,12 +29,14 @@ public class ThreadJugador extends Thread{
     Paquete paqueteLectura;
     Paquete paqueteEscritura;
     private PantallaJugador refPantalla;
+    private PantallaEspera refPantalla2;
     public boolean admin;
     String imagen;
 
-    public ThreadJugador(Socket socketRef, PantallaJugador refPantalla) throws IOException {
+    public ThreadJugador(Socket socketRef, PantallaJugador refPantalla, PantallaEspera refPantalla2) throws IOException {
         this.socketRef = socketRef;
         this.refPantalla = refPantalla;
+        this.refPantalla2 = refPantalla2;
         paqueteLectura = new Paquete();
         paqueteEscritura = new Paquete();
         nombre = "";
@@ -58,7 +60,8 @@ public class ThreadJugador extends Thread{
                 paqueteLectura = (Paquete) reader.readObject(); // esperar hasta que reciba un entero
                 
                 if(paqueteLectura.iniciarTodos){
-                    
+                    refPantalla2.setVisible(false);
+                    refPantalla.setVisible(true);
                 }
                 else if(paqueteLectura.comprar){
                     

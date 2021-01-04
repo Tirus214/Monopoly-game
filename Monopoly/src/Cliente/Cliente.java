@@ -18,14 +18,17 @@ public class Cliente {
     
     Socket socketRef;
     PantallaJugador refPantalla;
+    PantallaEspera refPantalla2;
     public ThreadJugador hiloCliente;
     private Paquete paquete;
     public String nombre;
     public String imagen;
     boolean admin;
 
-    public Cliente(PantallaJugador refPantalla, String nombre, String imagen) {
+    public Cliente(PantallaJugador refPantalla, PantallaEspera refPantalla2, String nombre, String imagen) {
         this.refPantalla = refPantalla;
+        this.refPantalla2 = refPantalla2;
+        
         refPantalla.setRefCliente(this);
         this.imagen = imagen;
         this.nombre = nombre;
@@ -36,7 +39,7 @@ public class Cliente {
         try{
         
             socketRef = new Socket("localhost", 35577);
-            hiloCliente = new ThreadJugador(socketRef, refPantalla);
+            hiloCliente = new ThreadJugador(socketRef, refPantalla, refPantalla2);
             hiloCliente.nombre = nombre;
             hiloCliente.imagen = imagen;
             hiloCliente.start();

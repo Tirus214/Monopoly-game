@@ -20,7 +20,7 @@ import javax.swing.JButton;
 public class PantallaInicial extends javax.swing.JFrame {
     String imagen;
     String nombre;
-    PantallaJugador pantalla;
+    PantallaEspera pantallaE;
     
     /**
      * Creates new form PantallaInicial
@@ -28,7 +28,7 @@ public class PantallaInicial extends javax.swing.JFrame {
     public PantallaInicial() {
         imagen = "";
         nombre = "";
-        pantalla = new PantallaJugador();
+        pantallaE = new PantallaEspera();
         initComponents();
         
         putImagenes();
@@ -351,10 +351,10 @@ public class PantallaInicial extends javax.swing.JFrame {
     private void btnAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarActionPerformed
         this.nombre = txfNombre.getText();
         if(imagen != ""){
-            Cliente c = new Cliente(pantalla, nombre, imagen);
-            pantalla.setVisible(true);
-            pantalla.setImagenFicha(imagen);
-            c.conectar();
+            this.setVisible(false);
+            pantallaE.setNombre(nombre);
+            pantallaE.imagen = imagen;
+            pantallaE.setVisible(true);
         }
     }//GEN-LAST:event_btnAceptarActionPerformed
 
