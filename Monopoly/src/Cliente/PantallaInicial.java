@@ -256,6 +256,7 @@ public class PantallaInicial extends javax.swing.JFrame {
         btnAceptar.setBorder(null);
         btnAceptar.setBorderPainted(false);
         btnAceptar.setContentAreaFilled(false);
+        btnAceptar.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btnAceptarPressed.png"))); // NOI18N
         btnAceptar.setFocusPainted(false);
         btnAceptar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btnAceptarPressed.png"))); // NOI18N
         btnAceptar.addActionListener(new java.awt.event.ActionListener() {

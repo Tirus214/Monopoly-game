@@ -60,7 +60,7 @@ public class PantallaJugador extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblTablero = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         lblFicha = new javax.swing.JLabel();
         lblNombreJugador = new javax.swing.JLabel();
@@ -70,55 +70,58 @@ public class PantallaJugador extends javax.swing.JFrame {
         lblDado2 = new javax.swing.JLabel();
         btnLanzarDados = new javax.swing.JButton();
         lblTurno = new javax.swing.JLabel();
-        label1 = new javax.swing.JLabel();
+        lblTitulo1 = new javax.swing.JLabel();
         btnMoverFicha = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
-        labelturno1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
-        jButton18 = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
-        jButton20 = new javax.swing.JButton();
-        jButton21 = new javax.swing.JButton();
-        jButton22 = new javax.swing.JButton();
-        jButton23 = new javax.swing.JButton();
-        jButton25 = new javax.swing.JButton();
-        jButton26 = new javax.swing.JButton();
-        jButton27 = new javax.swing.JButton();
-        jButton28 = new javax.swing.JButton();
-        jButton29 = new javax.swing.JButton();
-        jButton24 = new javax.swing.JButton();
+        labelTitulo2 = new javax.swing.JLabel();
+        btnCasillaNorthumrldAv = new javax.swing.JButton();
+        btnCasillaVineSt = new javax.swing.JButton();
+        btnCasillaRegentSt = new javax.swing.JButton();
+        btnCasillaStrand = new javax.swing.JButton();
+        btnCasillaFleetSt = new javax.swing.JButton();
+        btnCasillaTrafalgarSq = new javax.swing.JButton();
+        btnCasillaWhitehall = new javax.swing.JButton();
+        btnCasillaMarlborough = new javax.swing.JButton();
+        btnCasillaOxfordSt = new javax.swing.JButton();
+        btnCasillaLeicesterSq = new javax.swing.JButton();
+        btnCasillaCoventrySt = new javax.swing.JButton();
+        btnCasillaPicadilly = new javax.swing.JButton();
+        btnCasillaPallMall = new javax.swing.JButton();
+        btnCasillaBowSt = new javax.swing.JButton();
+        btnCasillaBondSt = new javax.swing.JButton();
+        btnCasillaPentonvilleRd = new javax.swing.JButton();
+        btnCasillaEustonRd = new javax.swing.JButton();
+        btnCasillaTheAngel = new javax.swing.JButton();
+        btnCasillaParkLane = new javax.swing.JButton();
+        btnFerrocarrilFS = new javax.swing.JButton();
+        btnFerrocarrilLS = new javax.swing.JButton();
+        btnCasillaElectricidad = new javax.swing.JButton();
+        btnCasillaWhiteChapelRd = new javax.swing.JButton();
+        btnCasillaMayfair = new javax.swing.JButton();
+        btnFerrocarrilMS = new javax.swing.JButton();
+        btnFerrocarrilKC = new javax.swing.JButton();
+        btnCasillaAgua = new javax.swing.JButton();
+        btnCasillaOldKentRd = new javax.swing.JButton();
+        btnEdificaciones = new javax.swing.JButton();
         lblHoteles = new javax.swing.JLabel();
         lblCasas = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
-        labelturno4 = new javax.swing.JLabel();
+        txaHistorial = new javax.swing.JTextArea();
+        labelTitulo3 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jTextField1 = new javax.swing.JTextField();
+        txaChat = new javax.swing.JTextArea();
+        txfEscribirChat = new javax.swing.JTextField();
         btnEnviarMensaje = new javax.swing.JButton();
+        jPanel7 = new javax.swing.JPanel();
+        lblFondoMonopoly = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(1515, 865));
+        setPreferredSize(new java.awt.Dimension(1515, 865));
         setResizable(false);
-
-        lblTablero.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/board2.jpg"))); // NOI18N
+        getContentPane().setLayout(null);
 
         jPanel2.setBackground(new java.awt.Color(51, 51, 51));
 
@@ -143,7 +146,7 @@ public class PantallaJugador extends javax.swing.JFrame {
                 .addComponent(lblFicha, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(lblNombreJugador, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(lblCantidadDinero, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(23, 23, 23))
         );
@@ -185,10 +188,10 @@ public class PantallaJugador extends javax.swing.JFrame {
         lblTurno.setText("NOMBRE TURNO");
         lblTurno.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        label1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        label1.setForeground(new java.awt.Color(51, 51, 51));
-        label1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        label1.setText("TURNO:");
+        lblTitulo1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblTitulo1.setForeground(new java.awt.Color(51, 51, 51));
+        lblTitulo1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lblTitulo1.setText("TURNO:");
 
         btnMoverFicha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btnMover.png"))); // NOI18N
         btnMoverFicha.setBorder(null);
@@ -208,291 +211,462 @@ public class PantallaJugador extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(34, 34, 34)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblTurno, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(lblTurno, javax.swing.GroupLayout.DEFAULT_SIZE, 166, Short.MAX_VALUE)
+                    .addComponent(lblTitulo1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
                 .addComponent(lblDado1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(lblDado2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnLanzarDados)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(btnMoverFicha)
-                .addContainerGap())
+                .addGap(22, 22, 22))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(32, 32, 32)
+                .addGap(30, 30, 30)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblDado2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblDado1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(btnLanzarDados, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnMoverFicha, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(11, 11, 11)
-                        .addComponent(label1)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addComponent(lblTitulo1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblTurno, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(43, Short.MAX_VALUE))
+                        .addComponent(lblTurno, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(btnLanzarDados, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblDado2)
+                            .addComponent(lblDado1))
+                        .addComponent(btnMoverFicha, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
 
         jPanel4.setBackground(new java.awt.Color(230, 230, 230));
 
-        labelturno1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        labelturno1.setForeground(new java.awt.Color(51, 51, 51));
-        labelturno1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelturno1.setText("MIS POSESIONES");
+        labelTitulo2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        labelTitulo2.setForeground(new java.awt.Color(51, 51, 51));
+        labelTitulo2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelTitulo2.setText("MIS POSESIONES");
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton1.setText("p");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnCasillaNorthumrldAv.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnCasillaNorthumrldAv.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/fucsia.png"))); // NOI18N
+        btnCasillaNorthumrldAv.setBorder(null);
+        btnCasillaNorthumrldAv.setBorderPainted(false);
+        btnCasillaNorthumrldAv.setContentAreaFilled(false);
+        btnCasillaNorthumrldAv.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/casillaDisabled.png"))); // NOI18N
+        btnCasillaNorthumrldAv.setEnabled(false);
+        btnCasillaNorthumrldAv.setFocusPainted(false);
+        btnCasillaNorthumrldAv.setOpaque(false);
+        btnCasillaNorthumrldAv.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnCasillaNorthumrldAvActionPerformed(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton2.setText("p");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnCasillaVineSt.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnCasillaVineSt.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/naranja.png"))); // NOI18N
+        btnCasillaVineSt.setBorder(null);
+        btnCasillaVineSt.setBorderPainted(false);
+        btnCasillaVineSt.setContentAreaFilled(false);
+        btnCasillaVineSt.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/casillaDisabled.png"))); // NOI18N
+        btnCasillaVineSt.setEnabled(false);
+        btnCasillaVineSt.setFocusPainted(false);
+        btnCasillaVineSt.setOpaque(false);
+        btnCasillaVineSt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnCasillaVineStActionPerformed(evt);
             }
         });
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton3.setText("p");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnCasillaRegentSt.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnCasillaRegentSt.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/verde.png"))); // NOI18N
+        btnCasillaRegentSt.setBorder(null);
+        btnCasillaRegentSt.setBorderPainted(false);
+        btnCasillaRegentSt.setContentAreaFilled(false);
+        btnCasillaRegentSt.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/casillaDisabled.png"))); // NOI18N
+        btnCasillaRegentSt.setEnabled(false);
+        btnCasillaRegentSt.setFocusPainted(false);
+        btnCasillaRegentSt.setOpaque(false);
+        btnCasillaRegentSt.setPreferredSize(new java.awt.Dimension(40, 40));
+        btnCasillaRegentSt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnCasillaRegentStActionPerformed(evt);
             }
         });
 
-        jButton4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton4.setText("p");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btnCasillaStrand.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnCasillaStrand.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/rojo.png"))); // NOI18N
+        btnCasillaStrand.setBorder(null);
+        btnCasillaStrand.setBorderPainted(false);
+        btnCasillaStrand.setContentAreaFilled(false);
+        btnCasillaStrand.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/casillaDisabled.png"))); // NOI18N
+        btnCasillaStrand.setEnabled(false);
+        btnCasillaStrand.setFocusPainted(false);
+        btnCasillaStrand.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btnCasillaStrandActionPerformed(evt);
             }
         });
 
-        jButton5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton5.setText("p");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        btnCasillaFleetSt.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnCasillaFleetSt.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/rojo.png"))); // NOI18N
+        btnCasillaFleetSt.setBorder(null);
+        btnCasillaFleetSt.setBorderPainted(false);
+        btnCasillaFleetSt.setContentAreaFilled(false);
+        btnCasillaFleetSt.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/casillaDisabled.png"))); // NOI18N
+        btnCasillaFleetSt.setEnabled(false);
+        btnCasillaFleetSt.setFocusPainted(false);
+        btnCasillaFleetSt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                btnCasillaFleetStActionPerformed(evt);
             }
         });
 
-        jButton6.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton6.setText("p");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        btnCasillaTrafalgarSq.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnCasillaTrafalgarSq.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/rojo.png"))); // NOI18N
+        btnCasillaTrafalgarSq.setBorder(null);
+        btnCasillaTrafalgarSq.setBorderPainted(false);
+        btnCasillaTrafalgarSq.setContentAreaFilled(false);
+        btnCasillaTrafalgarSq.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/casillaDisabled.png"))); // NOI18N
+        btnCasillaTrafalgarSq.setEnabled(false);
+        btnCasillaTrafalgarSq.setFocusPainted(false);
+        btnCasillaTrafalgarSq.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                btnCasillaTrafalgarSqActionPerformed(evt);
             }
         });
 
-        jButton7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton7.setText("p");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        btnCasillaWhitehall.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnCasillaWhitehall.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/fucsia.png"))); // NOI18N
+        btnCasillaWhitehall.setBorder(null);
+        btnCasillaWhitehall.setBorderPainted(false);
+        btnCasillaWhitehall.setContentAreaFilled(false);
+        btnCasillaWhitehall.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/casillaDisabled.png"))); // NOI18N
+        btnCasillaWhitehall.setEnabled(false);
+        btnCasillaWhitehall.setFocusPainted(false);
+        btnCasillaWhitehall.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                btnCasillaWhitehallActionPerformed(evt);
             }
         });
 
-        jButton8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton8.setText("p");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        btnCasillaMarlborough.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnCasillaMarlborough.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/naranja.png"))); // NOI18N
+        btnCasillaMarlborough.setBorder(null);
+        btnCasillaMarlborough.setBorderPainted(false);
+        btnCasillaMarlborough.setContentAreaFilled(false);
+        btnCasillaMarlborough.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/casillaDisabled.png"))); // NOI18N
+        btnCasillaMarlborough.setEnabled(false);
+        btnCasillaMarlborough.setFocusPainted(false);
+        btnCasillaMarlborough.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                btnCasillaMarlboroughActionPerformed(evt);
             }
         });
 
-        jButton9.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton9.setText("p");
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
+        btnCasillaOxfordSt.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnCasillaOxfordSt.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/verde.png"))); // NOI18N
+        btnCasillaOxfordSt.setBorder(null);
+        btnCasillaOxfordSt.setBorderPainted(false);
+        btnCasillaOxfordSt.setContentAreaFilled(false);
+        btnCasillaOxfordSt.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/casillaDisabled.png"))); // NOI18N
+        btnCasillaOxfordSt.setEnabled(false);
+        btnCasillaOxfordSt.setFocusPainted(false);
+        btnCasillaOxfordSt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
+                btnCasillaOxfordStActionPerformed(evt);
             }
         });
 
-        jButton10.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton10.setText("p");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
+        btnCasillaLeicesterSq.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnCasillaLeicesterSq.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/amarillo.png"))); // NOI18N
+        btnCasillaLeicesterSq.setBorder(null);
+        btnCasillaLeicesterSq.setBorderPainted(false);
+        btnCasillaLeicesterSq.setContentAreaFilled(false);
+        btnCasillaLeicesterSq.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/casillaDisabled.png"))); // NOI18N
+        btnCasillaLeicesterSq.setEnabled(false);
+        btnCasillaLeicesterSq.setFocusPainted(false);
+        btnCasillaLeicesterSq.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
+                btnCasillaLeicesterSqActionPerformed(evt);
             }
         });
 
-        jButton11.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton11.setText("p");
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
+        btnCasillaCoventrySt.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnCasillaCoventrySt.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/amarillo.png"))); // NOI18N
+        btnCasillaCoventrySt.setBorder(null);
+        btnCasillaCoventrySt.setBorderPainted(false);
+        btnCasillaCoventrySt.setContentAreaFilled(false);
+        btnCasillaCoventrySt.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/casillaDisabled.png"))); // NOI18N
+        btnCasillaCoventrySt.setEnabled(false);
+        btnCasillaCoventrySt.setFocusPainted(false);
+        btnCasillaCoventrySt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
+                btnCasillaCoventryStActionPerformed(evt);
             }
         });
 
-        jButton12.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton12.setText("p");
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
+        btnCasillaPicadilly.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnCasillaPicadilly.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/amarillo.png"))); // NOI18N
+        btnCasillaPicadilly.setBorder(null);
+        btnCasillaPicadilly.setBorderPainted(false);
+        btnCasillaPicadilly.setContentAreaFilled(false);
+        btnCasillaPicadilly.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/casillaDisabled.png"))); // NOI18N
+        btnCasillaPicadilly.setEnabled(false);
+        btnCasillaPicadilly.setFocusPainted(false);
+        btnCasillaPicadilly.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
+                btnCasillaPicadillyActionPerformed(evt);
             }
         });
 
-        jButton13.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton13.setText("p");
-        jButton13.addActionListener(new java.awt.event.ActionListener() {
+        btnCasillaPallMall.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnCasillaPallMall.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/fucsia.png"))); // NOI18N
+        btnCasillaPallMall.setBorder(null);
+        btnCasillaPallMall.setBorderPainted(false);
+        btnCasillaPallMall.setContentAreaFilled(false);
+        btnCasillaPallMall.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/casillaDisabled.png"))); // NOI18N
+        btnCasillaPallMall.setEnabled(false);
+        btnCasillaPallMall.setFocusPainted(false);
+        btnCasillaPallMall.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton13ActionPerformed(evt);
+                btnCasillaPallMallActionPerformed(evt);
             }
         });
 
-        jButton14.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton14.setText("p");
-        jButton14.addActionListener(new java.awt.event.ActionListener() {
+        btnCasillaBowSt.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnCasillaBowSt.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/naranja.png"))); // NOI18N
+        btnCasillaBowSt.setBorder(null);
+        btnCasillaBowSt.setBorderPainted(false);
+        btnCasillaBowSt.setContentAreaFilled(false);
+        btnCasillaBowSt.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/casillaDisabled.png"))); // NOI18N
+        btnCasillaBowSt.setEnabled(false);
+        btnCasillaBowSt.setFocusPainted(false);
+        btnCasillaBowSt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton14ActionPerformed(evt);
+                btnCasillaBowStActionPerformed(evt);
             }
         });
 
-        jButton15.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton15.setText("p");
-        jButton15.addActionListener(new java.awt.event.ActionListener() {
+        btnCasillaBondSt.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnCasillaBondSt.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/verde.png"))); // NOI18N
+        btnCasillaBondSt.setBorder(null);
+        btnCasillaBondSt.setBorderPainted(false);
+        btnCasillaBondSt.setContentAreaFilled(false);
+        btnCasillaBondSt.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/casillaDisabled.png"))); // NOI18N
+        btnCasillaBondSt.setEnabled(false);
+        btnCasillaBondSt.setFocusPainted(false);
+        btnCasillaBondSt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton15ActionPerformed(evt);
+                btnCasillaBondStActionPerformed(evt);
             }
         });
 
-        jButton16.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton16.setText("p");
-        jButton16.addActionListener(new java.awt.event.ActionListener() {
+        btnCasillaPentonvilleRd.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnCasillaPentonvilleRd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/celeste.png"))); // NOI18N
+        btnCasillaPentonvilleRd.setBorder(null);
+        btnCasillaPentonvilleRd.setBorderPainted(false);
+        btnCasillaPentonvilleRd.setContentAreaFilled(false);
+        btnCasillaPentonvilleRd.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/casillaDisabled.png"))); // NOI18N
+        btnCasillaPentonvilleRd.setEnabled(false);
+        btnCasillaPentonvilleRd.setFocusPainted(false);
+        btnCasillaPentonvilleRd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton16ActionPerformed(evt);
+                btnCasillaPentonvilleRdActionPerformed(evt);
             }
         });
 
-        jButton17.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton17.setText("p");
-        jButton17.addActionListener(new java.awt.event.ActionListener() {
+        btnCasillaEustonRd.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnCasillaEustonRd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/celeste.png"))); // NOI18N
+        btnCasillaEustonRd.setBorder(null);
+        btnCasillaEustonRd.setBorderPainted(false);
+        btnCasillaEustonRd.setContentAreaFilled(false);
+        btnCasillaEustonRd.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/casillaDisabled.png"))); // NOI18N
+        btnCasillaEustonRd.setEnabled(false);
+        btnCasillaEustonRd.setFocusPainted(false);
+        btnCasillaEustonRd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton17ActionPerformed(evt);
+                btnCasillaEustonRdActionPerformed(evt);
             }
         });
 
-        jButton18.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton18.setText("p");
-        jButton18.addActionListener(new java.awt.event.ActionListener() {
+        btnCasillaTheAngel.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnCasillaTheAngel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/celeste.png"))); // NOI18N
+        btnCasillaTheAngel.setBorder(null);
+        btnCasillaTheAngel.setBorderPainted(false);
+        btnCasillaTheAngel.setContentAreaFilled(false);
+        btnCasillaTheAngel.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/casillaDisabled.png"))); // NOI18N
+        btnCasillaTheAngel.setEnabled(false);
+        btnCasillaTheAngel.setFocusPainted(false);
+        btnCasillaTheAngel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton18ActionPerformed(evt);
+                btnCasillaTheAngelActionPerformed(evt);
             }
         });
 
-        jButton19.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton19.setText("p");
-        jButton19.addActionListener(new java.awt.event.ActionListener() {
+        btnCasillaParkLane.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnCasillaParkLane.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/azul.png"))); // NOI18N
+        btnCasillaParkLane.setBorder(null);
+        btnCasillaParkLane.setBorderPainted(false);
+        btnCasillaParkLane.setContentAreaFilled(false);
+        btnCasillaParkLane.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/casillaDisabled.png"))); // NOI18N
+        btnCasillaParkLane.setEnabled(false);
+        btnCasillaParkLane.setFocusPainted(false);
+        btnCasillaParkLane.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton19ActionPerformed(evt);
+                btnCasillaParkLaneActionPerformed(evt);
             }
         });
 
-        jButton20.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton20.setText("p");
-        jButton20.addActionListener(new java.awt.event.ActionListener() {
+        btnFerrocarrilFS.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnFerrocarrilFS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ferrocarril.png"))); // NOI18N
+        btnFerrocarrilFS.setBorder(null);
+        btnFerrocarrilFS.setBorderPainted(false);
+        btnFerrocarrilFS.setContentAreaFilled(false);
+        btnFerrocarrilFS.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ferrocarrilDisabled.png"))); // NOI18N
+        btnFerrocarrilFS.setEnabled(false);
+        btnFerrocarrilFS.setFocusPainted(false);
+        btnFerrocarrilFS.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton20ActionPerformed(evt);
+                btnFerrocarrilFSActionPerformed(evt);
             }
         });
 
-        jButton21.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton21.setText("p");
-        jButton21.addActionListener(new java.awt.event.ActionListener() {
+        btnFerrocarrilLS.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnFerrocarrilLS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ferrocarril.png"))); // NOI18N
+        btnFerrocarrilLS.setBorder(null);
+        btnFerrocarrilLS.setBorderPainted(false);
+        btnFerrocarrilLS.setContentAreaFilled(false);
+        btnFerrocarrilLS.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ferrocarrilDisabled.png"))); // NOI18N
+        btnFerrocarrilLS.setEnabled(false);
+        btnFerrocarrilLS.setFocusPainted(false);
+        btnFerrocarrilLS.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton21ActionPerformed(evt);
+                btnFerrocarrilLSActionPerformed(evt);
             }
         });
 
-        jButton22.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton22.setText("p");
-        jButton22.addActionListener(new java.awt.event.ActionListener() {
+        btnCasillaElectricidad.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnCasillaElectricidad.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/bombillo.png"))); // NOI18N
+        btnCasillaElectricidad.setBorder(null);
+        btnCasillaElectricidad.setBorderPainted(false);
+        btnCasillaElectricidad.setContentAreaFilled(false);
+        btnCasillaElectricidad.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/electricidadDisabled.png"))); // NOI18N
+        btnCasillaElectricidad.setEnabled(false);
+        btnCasillaElectricidad.setFocusPainted(false);
+        btnCasillaElectricidad.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton22ActionPerformed(evt);
+                btnCasillaElectricidadActionPerformed(evt);
             }
         });
 
-        jButton23.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton23.setText("p");
-        jButton23.addActionListener(new java.awt.event.ActionListener() {
+        btnCasillaWhiteChapelRd.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnCasillaWhiteChapelRd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/cafe.png"))); // NOI18N
+        btnCasillaWhiteChapelRd.setBorder(null);
+        btnCasillaWhiteChapelRd.setBorderPainted(false);
+        btnCasillaWhiteChapelRd.setContentAreaFilled(false);
+        btnCasillaWhiteChapelRd.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/casillaDisabled.png"))); // NOI18N
+        btnCasillaWhiteChapelRd.setEnabled(false);
+        btnCasillaWhiteChapelRd.setFocusPainted(false);
+        btnCasillaWhiteChapelRd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton23ActionPerformed(evt);
+                btnCasillaWhiteChapelRdActionPerformed(evt);
             }
         });
 
-        jButton25.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton25.setText("p");
-        jButton25.addActionListener(new java.awt.event.ActionListener() {
+        btnCasillaMayfair.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnCasillaMayfair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/azul.png"))); // NOI18N
+        btnCasillaMayfair.setBorder(null);
+        btnCasillaMayfair.setBorderPainted(false);
+        btnCasillaMayfair.setContentAreaFilled(false);
+        btnCasillaMayfair.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/casillaDisabled.png"))); // NOI18N
+        btnCasillaMayfair.setEnabled(false);
+        btnCasillaMayfair.setFocusPainted(false);
+        btnCasillaMayfair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton25ActionPerformed(evt);
+                btnCasillaMayfairActionPerformed(evt);
             }
         });
 
-        jButton26.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton26.setText("p");
-        jButton26.addActionListener(new java.awt.event.ActionListener() {
+        btnFerrocarrilMS.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnFerrocarrilMS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ferrocarril.png"))); // NOI18N
+        btnFerrocarrilMS.setBorder(null);
+        btnFerrocarrilMS.setBorderPainted(false);
+        btnFerrocarrilMS.setContentAreaFilled(false);
+        btnFerrocarrilMS.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ferrocarrilDisabled.png"))); // NOI18N
+        btnFerrocarrilMS.setEnabled(false);
+        btnFerrocarrilMS.setFocusPainted(false);
+        btnFerrocarrilMS.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton26ActionPerformed(evt);
+                btnFerrocarrilMSActionPerformed(evt);
             }
         });
 
-        jButton27.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton27.setText("p");
-        jButton27.addActionListener(new java.awt.event.ActionListener() {
+        btnFerrocarrilKC.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnFerrocarrilKC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ferrocarril.png"))); // NOI18N
+        btnFerrocarrilKC.setBorder(null);
+        btnFerrocarrilKC.setBorderPainted(false);
+        btnFerrocarrilKC.setContentAreaFilled(false);
+        btnFerrocarrilKC.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ferrocarrilDisabled.png"))); // NOI18N
+        btnFerrocarrilKC.setEnabled(false);
+        btnFerrocarrilKC.setFocusPainted(false);
+        btnFerrocarrilKC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton27ActionPerformed(evt);
+                btnFerrocarrilKCActionPerformed(evt);
             }
         });
 
-        jButton28.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton28.setText("p");
-        jButton28.addActionListener(new java.awt.event.ActionListener() {
+        btnCasillaAgua.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnCasillaAgua.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/agua.png"))); // NOI18N
+        btnCasillaAgua.setBorder(null);
+        btnCasillaAgua.setBorderPainted(false);
+        btnCasillaAgua.setContentAreaFilled(false);
+        btnCasillaAgua.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/aguaDisabled.png"))); // NOI18N
+        btnCasillaAgua.setEnabled(false);
+        btnCasillaAgua.setFocusPainted(false);
+        btnCasillaAgua.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton28ActionPerformed(evt);
+                btnCasillaAguaActionPerformed(evt);
             }
         });
 
-        jButton29.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton29.setText("p");
-        jButton29.addActionListener(new java.awt.event.ActionListener() {
+        btnCasillaOldKentRd.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnCasillaOldKentRd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/cafe.png"))); // NOI18N
+        btnCasillaOldKentRd.setBorder(null);
+        btnCasillaOldKentRd.setBorderPainted(false);
+        btnCasillaOldKentRd.setContentAreaFilled(false);
+        btnCasillaOldKentRd.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/casillaDisabled.png"))); // NOI18N
+        btnCasillaOldKentRd.setEnabled(false);
+        btnCasillaOldKentRd.setFocusPainted(false);
+        btnCasillaOldKentRd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton29ActionPerformed(evt);
+                btnCasillaOldKentRdActionPerformed(evt);
             }
         });
 
-        jButton24.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btnCasas.png"))); // NOI18N
-        jButton24.setBorder(null);
-        jButton24.setBorderPainted(false);
-        jButton24.setContentAreaFilled(false);
-        jButton24.setFocusPainted(false);
-        jButton24.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btnCasasPressed.png"))); // NOI18N
-        jButton24.addActionListener(new java.awt.event.ActionListener() {
+        btnEdificaciones.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnEdificaciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btnCasas.png"))); // NOI18N
+        btnEdificaciones.setBorder(null);
+        btnEdificaciones.setBorderPainted(false);
+        btnEdificaciones.setContentAreaFilled(false);
+        btnEdificaciones.setFocusPainted(false);
+        btnEdificaciones.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btnCasasPressed.png"))); // NOI18N
+        btnEdificaciones.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton24ActionPerformed(evt);
+                btnEdificacionesActionPerformed(evt);
             }
         });
 
         lblHoteles.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         lblHoteles.setForeground(new java.awt.Color(204, 0, 0));
         lblHoteles.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblHoteles.setText("##");
+        lblHoteles.setText("0");
 
         lblCasas.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         lblCasas.setForeground(new java.awt.Color(0, 153, 0));
         lblCasas.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblCasas.setText("##");
+        lblCasas.setText("0");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -502,130 +676,128 @@ public class PantallaJugador extends javax.swing.JFrame {
                 .addGap(27, 27, 27)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(labelturno1)
+                        .addComponent(labelTitulo2)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnCasillaPallMall, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnCasillaBowSt, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnCasillaBondSt, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnCasillaPentonvilleRd, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnCasillaEustonRd, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(btnCasillaTheAngel, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addGroup(jPanel4Layout.createSequentialGroup()
-                                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCasillaWhitehall, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCasillaMarlborough, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCasillaOxfordSt, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCasillaLeicesterSq, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCasillaCoventrySt, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(btnCasillaPicadilly, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(jPanel4Layout.createSequentialGroup()
-                                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCasillaNorthumrldAv, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCasillaVineSt, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCasillaRegentSt, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCasillaStrand, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCasillaFleetSt, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(btnCasillaTrafalgarSq, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnCasillaMayfair, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnFerrocarrilMS, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnFerrocarrilKC, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(btnCasillaAgua, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnCasillaParkLane, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnFerrocarrilFS, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnFerrocarrilLS, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(btnCasillaElectricidad, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addComponent(jButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnCasillaWhiteChapelRd, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(btnCasillaOldKentRd, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                                .addComponent(jButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(34, 34, 34))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                                .addComponent(lblHoteles)
-                                .addGap(26, 26, 26)
-                                .addComponent(lblCasas)
-                                .addGap(44, 44, 44))))))
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btnEdificaciones, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(lblHoteles, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(lblCasas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGap(34, 34, 34))))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addComponent(labelturno1)
+                .addComponent(labelTitulo2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel4Layout.createSequentialGroup()
                                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(btnCasillaVineSt, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCasillaRegentSt, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCasillaStrand, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCasillaFleetSt, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCasillaTrafalgarSq, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCasillaNorthumrldAv, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(btnCasillaWhitehall, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCasillaMarlborough, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCasillaOxfordSt, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCasillaLeicesterSq, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCasillaCoventrySt, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCasillaPicadilly, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel4Layout.createSequentialGroup()
                                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(btnCasillaParkLane, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnFerrocarrilFS, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnFerrocarrilLS, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCasillaElectricidad, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(btnCasillaMayfair, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnFerrocarrilMS, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnFerrocarrilKC, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCasillaAgua, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(8, 8, 8)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnCasillaPallMall, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnCasillaBowSt, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnCasillaBondSt, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnCasillaPentonvilleRd, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnCasillaEustonRd, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnCasillaTheAngel, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnCasillaWhiteChapelRd, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnCasillaOldKentRd, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnEdificaciones, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblHoteles)
@@ -635,15 +807,16 @@ public class PantallaJugador extends javax.swing.JFrame {
 
         jPanel6.setBackground(new java.awt.Color(204, 204, 204));
 
-        jTextArea2.setColumns(20);
-        jTextArea2.setRows(5);
-        jTextArea2.setText("fsdg\nfgfdg\n\n\nfgfdg\nfdgdfg\nfg\n");
-        jScrollPane2.setViewportView(jTextArea2);
+        txaHistorial.setColumns(20);
+        txaHistorial.setRows(5);
+        txaHistorial.setText("fsdg\nfgfdg\n\n\nfgfdg\nfdgdfg\nfg\n");
+        txaHistorial.setEnabled(false);
+        jScrollPane2.setViewportView(txaHistorial);
 
-        labelturno4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        labelturno4.setForeground(new java.awt.Color(51, 51, 51));
-        labelturno4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        labelturno4.setText("HISTORIAL");
+        labelTitulo3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        labelTitulo3.setForeground(new java.awt.Color(51, 51, 51));
+        labelTitulo3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        labelTitulo3.setText("HISTORIAL");
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -652,28 +825,44 @@ public class PantallaJugador extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGap(28, 28, 28)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(labelturno4, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(labelTitulo3, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 623, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(29, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(labelturno4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(31, 31, 31))
+                .addContainerGap(17, Short.MAX_VALUE)
+                .addComponent(labelTitulo3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(24, 24, 24))
         );
 
         jPanel5.setBackground(new java.awt.Color(51, 51, 51));
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jTextArea1.setText("prueba\nprueba\nprueba\npruebaprueba\npruebaprueba\npruebaprueba\npruebaprueba\nprueba");
-        jScrollPane1.setViewportView(jTextArea1);
+        txaChat.setColumns(20);
+        txaChat.setRows(5);
+        txaChat.setText("prueba\nprueba\nprueba\npruebaprueba\npruebaprueba\npruebaprueba\npruebaprueba\nprueba");
+        txaChat.setEnabled(false);
+        jScrollPane1.setViewportView(txaChat);
 
-        jTextField1.setText("Escriba aquí");
+        txfEscribirChat.setText("Escriba aquí...");
+        txfEscribirChat.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txfEscribirChatFocusLost(evt);
+            }
+        });
+        txfEscribirChat.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txfEscribirChatMouseClicked(evt);
+            }
+        });
+        txfEscribirChat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txfEscribirChatActionPerformed(evt);
+            }
+        });
 
         btnEnviarMensaje.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/btnEnviar.png"))); // NOI18N
         btnEnviarMensaje.setBorder(null);
@@ -696,7 +885,7 @@ public class PantallaJugador extends javax.swing.JFrame {
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane1)
                     .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 501, Short.MAX_VALUE)
+                        .addComponent(txfEscribirChat)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnEnviarMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(27, 27, 27))
@@ -704,49 +893,51 @@ public class PantallaJugador extends javax.swing.JFrame {
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                .addContainerGap(26, Short.MAX_VALUE)
+                .addContainerGap(19, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(btnEnviarMensaje)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31))
+                    .addComponent(txfEscribirChat, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(28, 28, 28))
         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(lblTablero)
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(lblTablero))
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
+
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(830, 0, 680, 831);
+
+        jPanel7.setPreferredSize(new java.awt.Dimension(830, 830));
+        jPanel7.setLayout(null);
+
+        lblFondoMonopoly.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/board2.jpg"))); // NOI18N
+        jPanel7.add(lblFondoMonopoly);
+        lblFondoMonopoly.setBounds(0, 0, 830, 830);
+
+        getContentPane().add(jPanel7);
+        jPanel7.setBounds(0, 0, 830, 830);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -755,121 +946,121 @@ public class PantallaJugador extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnEnviarMensajeActionPerformed
 
-    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+    private void btnEdificacionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEdificacionesActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton24ActionPerformed
+    }//GEN-LAST:event_btnEdificacionesActionPerformed
 
-    private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
+    private void btnCasillaOldKentRdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasillaOldKentRdActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton29ActionPerformed
+    }//GEN-LAST:event_btnCasillaOldKentRdActionPerformed
 
-    private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
+    private void btnCasillaAguaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasillaAguaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton28ActionPerformed
+    }//GEN-LAST:event_btnCasillaAguaActionPerformed
 
-    private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
+    private void btnFerrocarrilKCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFerrocarrilKCActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton27ActionPerformed
+    }//GEN-LAST:event_btnFerrocarrilKCActionPerformed
 
-    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
+    private void btnFerrocarrilMSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFerrocarrilMSActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton26ActionPerformed
+    }//GEN-LAST:event_btnFerrocarrilMSActionPerformed
 
-    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
+    private void btnCasillaMayfairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasillaMayfairActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton25ActionPerformed
+    }//GEN-LAST:event_btnCasillaMayfairActionPerformed
 
-    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
+    private void btnCasillaWhiteChapelRdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasillaWhiteChapelRdActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton23ActionPerformed
+    }//GEN-LAST:event_btnCasillaWhiteChapelRdActionPerformed
 
-    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
+    private void btnCasillaElectricidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasillaElectricidadActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton22ActionPerformed
+    }//GEN-LAST:event_btnCasillaElectricidadActionPerformed
 
-    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
+    private void btnFerrocarrilLSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFerrocarrilLSActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton21ActionPerformed
+    }//GEN-LAST:event_btnFerrocarrilLSActionPerformed
 
-    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
+    private void btnFerrocarrilFSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFerrocarrilFSActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton20ActionPerformed
+    }//GEN-LAST:event_btnFerrocarrilFSActionPerformed
 
-    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+    private void btnCasillaParkLaneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasillaParkLaneActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton19ActionPerformed
+    }//GEN-LAST:event_btnCasillaParkLaneActionPerformed
 
-    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+    private void btnCasillaTheAngelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasillaTheAngelActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton18ActionPerformed
+    }//GEN-LAST:event_btnCasillaTheAngelActionPerformed
 
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+    private void btnCasillaEustonRdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasillaEustonRdActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton17ActionPerformed
+    }//GEN-LAST:event_btnCasillaEustonRdActionPerformed
 
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+    private void btnCasillaPentonvilleRdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasillaPentonvilleRdActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton16ActionPerformed
+    }//GEN-LAST:event_btnCasillaPentonvilleRdActionPerformed
 
-    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+    private void btnCasillaBondStActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasillaBondStActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton15ActionPerformed
+    }//GEN-LAST:event_btnCasillaBondStActionPerformed
 
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+    private void btnCasillaBowStActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasillaBowStActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton14ActionPerformed
+    }//GEN-LAST:event_btnCasillaBowStActionPerformed
 
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+    private void btnCasillaPallMallActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasillaPallMallActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton13ActionPerformed
+    }//GEN-LAST:event_btnCasillaPallMallActionPerformed
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+    private void btnCasillaPicadillyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasillaPicadillyActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton12ActionPerformed
+    }//GEN-LAST:event_btnCasillaPicadillyActionPerformed
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+    private void btnCasillaCoventryStActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasillaCoventryStActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton11ActionPerformed
+    }//GEN-LAST:event_btnCasillaCoventryStActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void btnCasillaLeicesterSqActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasillaLeicesterSqActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }//GEN-LAST:event_btnCasillaLeicesterSqActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+    private void btnCasillaOxfordStActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasillaOxfordStActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton9ActionPerformed
+    }//GEN-LAST:event_btnCasillaOxfordStActionPerformed
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void btnCasillaMarlboroughActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasillaMarlboroughActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }//GEN-LAST:event_btnCasillaMarlboroughActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void btnCasillaWhitehallActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasillaWhitehallActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_btnCasillaWhitehallActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void btnCasillaTrafalgarSqActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasillaTrafalgarSqActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_btnCasillaTrafalgarSqActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void btnCasillaFleetStActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasillaFleetStActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_btnCasillaFleetStActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void btnCasillaStrandActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasillaStrandActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_btnCasillaStrandActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnCasillaRegentStActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasillaRegentStActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btnCasillaRegentStActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnCasillaVineStActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasillaVineStActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnCasillaVineStActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnCasillaNorthumrldAvActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasillaNorthumrldAvActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnCasillaNorthumrldAvActionPerformed
 
     private void btnMoverFichaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMoverFichaActionPerformed
         // TODO add your handling code here:
@@ -878,6 +1069,18 @@ public class PantallaJugador extends javax.swing.JFrame {
     private void btnLanzarDadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLanzarDadosActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnLanzarDadosActionPerformed
+
+    private void txfEscribirChatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txfEscribirChatActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txfEscribirChatActionPerformed
+
+    private void txfEscribirChatMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txfEscribirChatMouseClicked
+        txfEscribirChat.setText("");
+    }//GEN-LAST:event_txfEscribirChatMouseClicked
+
+    private void txfEscribirChatFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txfEscribirChatFocusLost
+        txfEscribirChat.setText("Escriba aquí...");
+    }//GEN-LAST:event_txfEscribirChatFocusLost
 
     /**
      * @param args the command line arguments
@@ -916,59 +1119,61 @@ public class PantallaJugador extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCasillaAgua;
+    private javax.swing.JButton btnCasillaBondSt;
+    private javax.swing.JButton btnCasillaBowSt;
+    private javax.swing.JButton btnCasillaCoventrySt;
+    private javax.swing.JButton btnCasillaElectricidad;
+    private javax.swing.JButton btnCasillaEustonRd;
+    private javax.swing.JButton btnCasillaFleetSt;
+    private javax.swing.JButton btnCasillaLeicesterSq;
+    private javax.swing.JButton btnCasillaMarlborough;
+    private javax.swing.JButton btnCasillaMayfair;
+    private javax.swing.JButton btnCasillaNorthumrldAv;
+    private javax.swing.JButton btnCasillaOldKentRd;
+    private javax.swing.JButton btnCasillaOxfordSt;
+    private javax.swing.JButton btnCasillaPallMall;
+    private javax.swing.JButton btnCasillaParkLane;
+    private javax.swing.JButton btnCasillaPentonvilleRd;
+    private javax.swing.JButton btnCasillaPicadilly;
+    private javax.swing.JButton btnCasillaRegentSt;
+    private javax.swing.JButton btnCasillaStrand;
+    private javax.swing.JButton btnCasillaTheAngel;
+    private javax.swing.JButton btnCasillaTrafalgarSq;
+    private javax.swing.JButton btnCasillaVineSt;
+    private javax.swing.JButton btnCasillaWhiteChapelRd;
+    private javax.swing.JButton btnCasillaWhitehall;
+    private javax.swing.JButton btnEdificaciones;
     private javax.swing.JButton btnEnviarMensaje;
+    private javax.swing.JButton btnFerrocarrilFS;
+    private javax.swing.JButton btnFerrocarrilKC;
+    private javax.swing.JButton btnFerrocarrilLS;
+    private javax.swing.JButton btnFerrocarrilMS;
     private javax.swing.JButton btnLanzarDados;
     private javax.swing.JButton btnMoverFicha;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton23;
-    private javax.swing.JButton jButton24;
-    private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton26;
-    private javax.swing.JButton jButton27;
-    private javax.swing.JButton jButton28;
-    private javax.swing.JButton jButton29;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextArea jTextArea2;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JLabel label1;
-    private javax.swing.JLabel labelturno1;
-    private javax.swing.JLabel labelturno4;
+    private javax.swing.JLabel labelTitulo2;
+    private javax.swing.JLabel labelTitulo3;
     private javax.swing.JLabel lblCantidadDinero;
     private javax.swing.JLabel lblCasas;
     private javax.swing.JLabel lblDado1;
     private javax.swing.JLabel lblDado2;
     private javax.swing.JLabel lblFicha;
+    private javax.swing.JLabel lblFondoMonopoly;
     private javax.swing.JLabel lblHoteles;
     private javax.swing.JLabel lblNombreJugador;
-    private javax.swing.JLabel lblTablero;
+    private javax.swing.JLabel lblTitulo1;
     private javax.swing.JLabel lblTurno;
+    private javax.swing.JTextArea txaChat;
+    private javax.swing.JTextArea txaHistorial;
+    private javax.swing.JTextField txfEscribirChat;
     // End of variables declaration//GEN-END:variables
 }
