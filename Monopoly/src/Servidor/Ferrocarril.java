@@ -5,18 +5,16 @@
  */
 package Servidor;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author Jean Paul
  */
-public class Banco {
-    int dinero;
-    ArrayList<Propiedad> propiedades;
+public class Ferrocarril extends Propiedad{
     
-    public Banco(){
-        dinero = 100000;
-        propiedades = new ArrayList<Propiedad>();
+    public Ferrocarril(String nombre, int costo) {
+        super(nombre, costo);
     }
+    
+
+    
 }

@@ -5,18 +5,14 @@
  */
 package Servidor;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author Jean Paul
  */
-public class Banco {
-    int dinero;
-    ArrayList<Propiedad> propiedades;
+abstract public class Casilla {
+    public String nombre;
     
-    public Banco(){
-        dinero = 100000;
-        propiedades = new ArrayList<Propiedad>();
+    public Casilla(String nombre){
+        this.nombre = nombre;
     }
 }
