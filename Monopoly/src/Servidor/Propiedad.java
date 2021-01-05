@@ -30,4 +30,5 @@ public class Propiedad extends Casilla{
     public void hipotecar(){
         this.owner = "Banco";
     }
+
 }

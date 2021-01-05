@@ -10,9 +10,15 @@ package Servidor;
  * @author Jean Paul
  */
 public class ServicioPublico extends Propiedad{
+    boolean todosLosServicios;
     
-    public ServicioPublico(String nombre) {
-        super(nombre);
+    public ServicioPublico(String nombre, int costo) {
+        super(nombre, costo, 0);
+        todosLosServicios = false;
     }
     
+    public int cobrarAlquiler(int dados){
+        if(todosLosServicios) return dados*10;
+        return dados*4;
+    }
 }

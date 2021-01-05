@@ -10,11 +10,16 @@ package Servidor;
  * @author Jean Paul
  */
 public class Ferrocarril extends Propiedad{
+    int cantFerrocarriles;
+    int alquiler;
     
-    public Ferrocarril(String nombre, int costo) {
+    public Ferrocarril(String nombre, int costo, int alquiler) {
         super(nombre, costo);
+        cantFerrocarriles = 1;
     }
     
-
+    public int cobrarAlquiler(){
+        return alquiler*cantFerrocarriles;
+    }
     
 }

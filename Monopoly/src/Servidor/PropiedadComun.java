@@ -23,5 +23,7 @@ public class PropiedadComun extends Propiedad{
         casas = 0;
     }
     
-  
+    public int cobrarAlquiler(){
+        return alquiler;
+    }
 }
