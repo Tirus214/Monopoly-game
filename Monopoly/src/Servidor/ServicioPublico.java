@@ -13,7 +13,7 @@ public class ServicioPublico extends Propiedad{
     boolean todosLosServicios;
     
     public ServicioPublico(String nombre, int costo) {
-        super(nombre, costo, 0);
+        super(nombre, costo);
         todosLosServicios = false;
     }
     

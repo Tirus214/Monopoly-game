@@ -10,32 +10,30 @@ package Cliente;
  * @author Jean Paul
  */
 public class PantallaEspera extends javax.swing.JFrame {
-    public String nombre;
-    public String imagen;
-    public PantallaJugador pantalla;
+    public PantallaJugador pantallaJ;
+    Cliente cliente;
 
     /**
      * Creates new form PantallaEspera
      */
     public PantallaEspera() {
-        imagen = "";
-        nombre = "";
-        pantalla = new PantallaJugador();
-        conectar();
+        pantallaJ = new PantallaJugador();
+        cliente = new Cliente(pantallaJ, this, "", "");
+        serAdmin();
         initComponents();
     }
     
     
-    public void conectar(){
-        pantalla.setImagenFicha(imagen);
-        Cliente c = new Cliente(pantalla, this, nombre, imagen);
-        c.conectar();
+    public void serAdmin(){
+        if(cliente.admin) btn1.setEnabled(true);
+        else btn1.setEnabled(false);
     }
     
-    public void setNombre(String nombre){
-        this.nombre = nombre;
-        setTitle(this.nombre);
+    
+    public void setCliente(Cliente c){
+        cliente = c;
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -87,7 +85,7 @@ public class PantallaEspera extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
-        pantalla.setImagenFicha(imagen);
+        cliente.hiloCliente.iniciarPartida();
     }//GEN-LAST:event_btn1ActionPerformed
 
     /**
@@ -126,7 +124,7 @@ public class PantallaEspera extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn1;
+    public javax.swing.JButton btn1;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

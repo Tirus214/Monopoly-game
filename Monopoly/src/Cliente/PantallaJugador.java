@@ -257,7 +257,6 @@ public class PantallaJugador extends javax.swing.JFrame {
         btnCasillaNorthumrldAv.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/casillaDisabled.png"))); // NOI18N
         btnCasillaNorthumrldAv.setEnabled(false);
         btnCasillaNorthumrldAv.setFocusPainted(false);
-        btnCasillaNorthumrldAv.setOpaque(false);
         btnCasillaNorthumrldAv.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCasillaNorthumrldAvActionPerformed(evt);
@@ -272,7 +271,6 @@ public class PantallaJugador extends javax.swing.JFrame {
         btnCasillaVineSt.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/casillaDisabled.png"))); // NOI18N
         btnCasillaVineSt.setEnabled(false);
         btnCasillaVineSt.setFocusPainted(false);
-        btnCasillaVineSt.setOpaque(false);
         btnCasillaVineSt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCasillaVineStActionPerformed(evt);
@@ -287,7 +285,6 @@ public class PantallaJugador extends javax.swing.JFrame {
         btnCasillaRegentSt.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/casillaDisabled.png"))); // NOI18N
         btnCasillaRegentSt.setEnabled(false);
         btnCasillaRegentSt.setFocusPainted(false);
-        btnCasillaRegentSt.setOpaque(false);
         btnCasillaRegentSt.setPreferredSize(new java.awt.Dimension(40, 40));
         btnCasillaRegentSt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

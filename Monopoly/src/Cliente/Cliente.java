@@ -28,7 +28,6 @@ public class Cliente {
     public Cliente(PantallaJugador refPantalla, PantallaEspera refPantalla2, String nombre, String imagen) {
         this.refPantalla = refPantalla;
         this.refPantalla2 = refPantalla2;
-        
         refPantalla.setRefCliente(this);
         this.imagen = imagen;
         this.nombre = nombre;

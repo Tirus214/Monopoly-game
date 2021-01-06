@@ -47,6 +47,7 @@ class ThreadServidor extends Thread{
                 }
                 
                 if(paqueteLectura.iniciarPartida){
+                    server.running = false;
                     
                 }
                 else if(paqueteLectura.comprar){
@@ -67,7 +68,21 @@ class ThreadServidor extends Thread{
             } catch (ClassNotFoundException ex) {
                 Logger.getLogger(ThreadServidor.class.getName()).log(Level.SEVERE, null, ex);
             }
+            
+            paqueteEscritura.clear();
+            paqueteLectura.clear();
         }
+    }
+    
+    
+    public void showPantallas(){
+        paqueteLectura.iniciarTodos = true;
+        try {
+            writer.writeObject(paqueteLectura);
+        } catch (IOException ex) {
+            Logger.getLogger(ThreadServidor.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        paqueteLectura.clear();
     }
 
 }

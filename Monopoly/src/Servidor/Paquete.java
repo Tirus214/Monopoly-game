@@ -21,16 +21,10 @@ public class Paquete {
     public boolean comprar;
     public boolean hipotecar;
     public boolean pasarSalida;
+    public boolean admin;
     
     public Paquete(){
-        mensaje = "";
-        sms = false;
-        iniciarJudador = false;
-        iniciarPartida = false;
-        iniciarTodos = false;
-        comprar = false;
-        hipotecar = false;
-        pasarSalida = false;
+        clear();
     }
     
     public void clear(){
@@ -42,5 +36,6 @@ public class Paquete {
         comprar = false;
         hipotecar = false;
         pasarSalida = false;
+        admin = false;
     }
 }

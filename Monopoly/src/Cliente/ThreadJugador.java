@@ -45,16 +45,9 @@ public class ThreadJugador extends Thread{
         writer = new ObjectOutputStream(socketRef.getOutputStream());
     }
     
-    public void run (){
-        paqueteEscritura.imagen = imagen;
-        paqueteEscritura.nombre = nombre;
-        paqueteEscritura.iniciarJudador = true;
-        try {
-            writer.writeObject(paqueteEscritura);
-        } catch (IOException ex) {
-            Logger.getLogger(ThreadJugador.class.getName()).log(Level.SEVERE, null, ex);
-        }
-
+    public void run (){ 
+        sendData();
+        
         while (running){
             try {
                 paqueteLectura = (Paquete) reader.readObject(); // esperar hasta que reciba un entero
@@ -63,8 +56,8 @@ public class ThreadJugador extends Thread{
                     refPantalla2.setVisible(false);
                     refPantalla.setVisible(true);
                 }
-                else if(paqueteLectura.comprar){
-                    
+                else if(paqueteLectura.admin){
+                    //refPantalla2
                 }
                 else if(paqueteLectura.hipotecar){
                     
@@ -77,10 +70,39 @@ public class ThreadJugador extends Thread{
                 }
                 
             } catch (IOException ex) {
-                
+                System.out.println("Error-1");
             } catch (ClassNotFoundException ex) {
+                System.out.println("Error-2");
                 Logger.getLogger(ThreadJugador.class.getName()).log(Level.SEVERE, null, ex);
             }
+            
+            paqueteEscritura.clear();
+            paqueteLectura.clear();
+        }
+    }
+    
+    public void sendData(){
+        paqueteEscritura.imagen = imagen;
+        paqueteEscritura.nombre = nombre;
+        paqueteEscritura.iniciarJudador = true;
+        try {
+            writer.writeObject(paqueteEscritura);
+        } catch (IOException ex) {
+            Logger.getLogger(ThreadJugador.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        paqueteEscritura.clear();
+    }
+    
+    
+    public void iniciarPartida(){
+        if(admin){
+            paqueteEscritura.iniciarPartida = true;
+            try {
+                writer.writeObject(paqueteEscritura);
+            } catch (IOException ex) {
+                Logger.getLogger(ThreadJugador.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            paqueteEscritura.clear();
         }
     }
 }

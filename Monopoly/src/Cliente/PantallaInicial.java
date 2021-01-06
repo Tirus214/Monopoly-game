@@ -22,11 +22,13 @@ public class PantallaInicial extends javax.swing.JFrame {
     String imagen;
     String nombre;
     PantallaEspera pantallaE;
+    PantallaJugador pantallaJ;
     
     
     public PantallaInicial() {
         imagen = "";
         nombre = "";
+        pantallaJ = new PantallaJugador();
         pantallaE = new PantallaEspera();
         initComponents();
     }
@@ -388,8 +390,10 @@ public class PantallaInicial extends javax.swing.JFrame {
         this.nombre = txfNombre.getText();
         if(imagen != ""){
             this.setVisible(false);
-            pantallaE.setNombre(nombre);
-            pantallaE.imagen = imagen;
+            pantallaJ.setImagenFicha(imagen);
+            pantallaE.pantallaJ = this.pantallaJ;
+            Cliente c = new Cliente(pantallaJ, pantallaE, nombre, imagen);
+            c.conectar();
             pantallaE.setVisible(true);
         }
     }//GEN-LAST:event_btnAceptarActionPerformed

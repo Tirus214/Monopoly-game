@@ -18,7 +18,7 @@ import java.util.ArrayList;
 public class Servidor{
     
     public ArrayList<ThreadServidor> conexiones;
-    private boolean running = true;
+    public boolean running = true;
     private ServerSocket srv;
 
     public Servidor() {
@@ -42,7 +42,7 @@ public class Servidor{
                 conexiones.add(newThread);
                 newThread.start();
                 if (contadorDeConexiones == 1){
-                    
+                    newThread.paqueteLectura.admin = true;
                 }
             }
             iniciarJuego();
