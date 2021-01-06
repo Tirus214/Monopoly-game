@@ -22,6 +22,7 @@ public class Paquete {
     public boolean hipotecar;
     public boolean pasarSalida;
     public boolean admin;
+    public int numero;
     
     public Paquete(){
         clear();

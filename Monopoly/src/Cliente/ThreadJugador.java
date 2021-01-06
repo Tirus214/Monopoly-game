@@ -11,8 +11,10 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
+import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import static javafx.scene.input.KeyCode.M;
 
 /**
  *
@@ -97,12 +99,25 @@ public class ThreadJugador extends Thread{
     public void iniciarPartida(){
         if(admin){
             paqueteEscritura.iniciarPartida = true;
-            try {
+            escribir();
+        }
+    }
+    
+    
+    public void tirarDados(){
+        paqueteEscritura.tirar = true;
+        paqueteEscritura.numero = (int) Math.floor(Math.random()*(12-2+1)+2);
+        paqueteEscritura.nombre = nombre;
+        escribir();
+    }
+    
+    
+    public void escribir(){
+        try {
                 writer.writeObject(paqueteEscritura);
             } catch (IOException ex) {
                 Logger.getLogger(ThreadJugador.class.getName()).log(Level.SEVERE, null, ex);
             }
             paqueteEscritura.clear();
-        }
     }
 }

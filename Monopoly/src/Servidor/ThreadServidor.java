@@ -75,7 +75,7 @@ class ThreadServidor extends Thread{
     }
     
     
-    public void showPantallas(){
+    public void iniciarTodos(){
         paqueteLectura.iniciarTodos = true;
         try {
             writer.writeObject(paqueteLectura);
