@@ -5,6 +5,7 @@
  */
 package Servidor;
 
+import Cliente.ThreadJugador;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -73,6 +74,20 @@ class ThreadServidor extends Thread{
             paqueteLectura.clear();
         }
     }
+    
+    
+    
+    
+    public void escribir(){
+        try {
+            writer.writeObject(paqueteEscritura);
+        } catch (IOException ex) {
+            Logger.getLogger(ThreadJugador.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        paqueteEscritura.clear();
+    }
+    
+    
     
     
     public void iniciarTodos(){

@@ -25,7 +25,7 @@ public class PantallaEspera extends javax.swing.JFrame {
     
     public void serAdmin(){
         if(!cliente.hiloCliente.admin) 
-            btn1.setEnabled(false);
+            btnIniciar.setEnabled(false);
     }
     
     
@@ -45,16 +45,17 @@ public class PantallaEspera extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        btn1 = new javax.swing.JButton();
+        btnIniciar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setText("Esperando Jugadores...");
 
-        btn1.setText("Iniciar Juego");
-        btn1.addActionListener(new java.awt.event.ActionListener() {
+        btnIniciar.setText("Iniciar Juego");
+        btnIniciar.setEnabled(false);
+        btnIniciar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn1ActionPerformed(evt);
+                btnIniciarActionPerformed(evt);
             }
         });
 
@@ -68,7 +69,7 @@ public class PantallaEspera extends javax.swing.JFrame {
                 .addGap(59, 59, 59))
             .addGroup(layout.createSequentialGroup()
                 .addGap(76, 76, 76)
-                .addComponent(btn1)
+                .addComponent(btnIniciar)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -77,16 +78,16 @@ public class PantallaEspera extends javax.swing.JFrame {
                 .addGap(60, 60, 60)
                 .addComponent(jLabel1)
                 .addGap(30, 30, 30)
-                .addComponent(btn1)
-                .addContainerGap(46, Short.MAX_VALUE))
+                .addComponent(btnIniciar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(37, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
+    private void btnIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIniciarActionPerformed
         cliente.hiloCliente.iniciarPartida();
-    }//GEN-LAST:event_btn1ActionPerformed
+    }//GEN-LAST:event_btnIniciarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -124,7 +125,7 @@ public class PantallaEspera extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton btn1;
+    public javax.swing.JButton btnIniciar;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

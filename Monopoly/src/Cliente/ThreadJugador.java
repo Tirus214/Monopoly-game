@@ -57,18 +57,19 @@ public class ThreadJugador extends Thread{
     }
     
     public void run (){ 
-        sendData();  //envia la info del cliente y la coloca en la pantalla
+        //sendData();  //envia la info del cliente y la coloca en la pantalla
         
         while (running){
             try {
                 paqueteLectura = (Paquete) reader.readObject(); // espera hasta recibir un paquete de datos
-                
-                if(paqueteLectura.iniciarTodos){
+                System.out.println("Recibió el paquete del admin");
+                if(paqueteLectura.admin){  //si es admin, se le activa el botón de comenzar
+                    System.out.println("Cambiando boton de admin");
+                    refPantalla2.btnIniciar.setEnabled(true);
+                }
+                else if(paqueteLectura.iniciarTodos){
                     refPantalla2.setVisible(false);
                     refPantalla.setVisible(true);
-                }
-                else if(paqueteLectura.admin){
-                    //refPantalla2
                 }
                 else if(paqueteLectura.hipotecar){
                     
@@ -135,7 +136,7 @@ public class ThreadJugador extends Thread{
             } catch (IOException ex) {
                 Logger.getLogger(ThreadJugador.class.getName()).log(Level.SEVERE, null, ex);
             }
-            paqueteEscritura.clear();
+        paqueteEscritura.clear();
     }
     
 }

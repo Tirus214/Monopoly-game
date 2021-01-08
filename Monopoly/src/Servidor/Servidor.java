@@ -42,8 +42,13 @@ public class Servidor{
                 ThreadServidor newThread = new ThreadServidor(nuevaConexion, this);
                 conexiones.add(newThread);
                 newThread.start();
+                
+                //indica que el primer jugador es el admin
                 if (contadorDeConexiones == 1){
-                    newThread.paqueteLectura.admin = true;
+                    System.out.println(contadorDeConexiones);
+                    System.out.println("Enviando paquete de admin");
+                    newThread.paqueteEscritura.admin = true;
+                    newThread.escribir();
                 }
             }
             iniciarJuego();
