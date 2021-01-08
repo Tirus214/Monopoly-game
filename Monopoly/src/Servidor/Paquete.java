@@ -16,7 +16,7 @@ public class Paquete implements Serializable{
     public String imagen;
     public String mensaje;
     public boolean sms;
-    public boolean iniciarJudador;
+    public boolean iniciarJugador;
     public boolean iniciarPartida;
     public boolean iniciarTodos;
     public boolean tirar;
@@ -38,7 +38,7 @@ public class Paquete implements Serializable{
         imagen = "";
         mensaje = "";
         sms = false;
-        iniciarJudador = false;
+        iniciarJugador = false;
         iniciarPartida = false;
         iniciarTodos = false;
         tirar = false;

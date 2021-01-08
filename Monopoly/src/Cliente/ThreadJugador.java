@@ -97,7 +97,7 @@ public class ThreadJugador extends Thread{
         //coloca los datos en el paquete
         paqueteEscritura.imagen = imagen;
         paqueteEscritura.nombre = nombre;
-        paqueteEscritura.iniciarJudador = true;
+        paqueteEscritura.iniciarJugador = true;
         
         try {
             writer.writeObject(paqueteEscritura);  //envía los datos al server

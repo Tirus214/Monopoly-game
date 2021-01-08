@@ -43,7 +43,7 @@ class ThreadServidor extends Thread{
             try {
                 paqueteLectura = (Paquete) reader.readObject(); // esperar hasta que reciba un entero
                 
-                if(paqueteLectura.iniciarJudador){
+                if(paqueteLectura.iniciarJugador){
                     System.out.println(paqueteLectura.nombre + "    " + paqueteLectura.imagen);
                 }
                 
