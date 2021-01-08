@@ -62,9 +62,8 @@ public class ThreadJugador extends Thread{
         while (running){
             try {
                 paqueteLectura = (Paquete) reader.readObject(); // espera hasta recibir un paquete de datos
-                System.out.println("Recibió el paquete del admin");
+                
                 if(paqueteLectura.admin){  //si es admin, se le activa el botón de comenzar
-                    System.out.println("Cambiando boton de admin");
                     refPantalla2.btnIniciar.setEnabled(true);
                 }
                 else if(paqueteLectura.iniciarTodos){

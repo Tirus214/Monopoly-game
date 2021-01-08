@@ -25,20 +25,28 @@ public class Paquete implements Serializable{
     public boolean pasarSalida;
     public boolean admin;
     public int numero;
+    //******SI AGREGAN ALGO MÁS, LO AGREGAN DE AQUI PARA ABAJO*****
+    //******PARA QUE ESTE ORDENADO CON RESPECTO A LO QUE YA INICIALIZAMOS EN EL CONSTRUCTOR
+    
     
     public Paquete(){
         clear();
     }
     
     public void clear(){
+        nombre = "";
+        imagen = "";
         mensaje = "";
         sms = false;
         iniciarJudador = false;
         iniciarPartida = false;
         iniciarTodos = false;
+        tirar = false;
         comprar = false;
         hipotecar = false;
         pasarSalida = false;
         admin = false;
+        numero = 0;
+        //******SI AGREGAN ALGO MÁS, LO AGREGAN DE AQUI PARA ABAJO*****
     }
 }
