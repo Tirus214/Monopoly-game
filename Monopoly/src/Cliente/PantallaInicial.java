@@ -13,6 +13,7 @@ import javax.imageio.ImageIO;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -387,14 +388,22 @@ public class PantallaInicial extends javax.swing.JFrame {
     }//GEN-LAST:event_btn12ActionPerformed
 
     private void btnAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarActionPerformed
-        this.nombre = txfNombre.getText();
+       
+        this.nombre = txfNombre.getText(); //obtiene el nombre
         if(imagen != ""){
-            this.setVisible(false);
-            pantallaJ.setImagenFicha(imagen);
-            pantallaE.pantallaJ = this.pantallaJ;
+            
+            this.setVisible(false); 
+            pantallaJ.setImagenFicha(imagen);     //coloca la imagen de la ficha en la ventana jugador
+            pantallaE.pantallaJ = this.pantallaJ; //envia la pantalla jugador a pantalla de espera
+            
+            //crea el cliente y lo conecta
             Cliente c = new Cliente(pantallaJ, pantallaE, nombre, imagen);
             c.conectar();
-            pantallaE.setVisible(true);
+            
+            pantallaE.setVisible(true); //muestra la pantalla de espera
+        }
+        else{
+            JOptionPane.showMessageDialog(this, "Debe seleccionar una ficha.");
         }
     }//GEN-LAST:event_btnAceptarActionPerformed
 

@@ -5,11 +5,13 @@
  */
 package Servidor;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Jean Paul
  */
-public class Paquete {
+public class Paquete implements Serializable{
     public String nombre;
     public String imagen;
     public String mensaje;

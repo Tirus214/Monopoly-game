@@ -24,7 +24,8 @@ public class PantallaEspera extends javax.swing.JFrame {
     
     
     public void serAdmin(){
-        if(!cliente.admin) btn1.setEnabled(false);
+        if(!cliente.hiloCliente.admin) 
+            btn1.setEnabled(false);
     }
     
     

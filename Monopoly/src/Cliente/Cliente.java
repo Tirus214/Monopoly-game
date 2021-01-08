@@ -23,7 +23,6 @@ public class Cliente {
     private Paquete paquete;
     public String nombre;
     public String imagen;
-    boolean admin;
 
     public Cliente(PantallaJugador refPantalla, PantallaEspera refPantalla2, String nombre, String imagen) {
         this.refPantalla = refPantalla;
@@ -31,13 +30,11 @@ public class Cliente {
         refPantalla.setRefCliente(this);
         this.imagen = imagen;
         this.nombre = nombre;
-        admin = false;
     }
     
     public void conectar(){
  
         try{
-        
             socketRef = new Socket("localhost", 35577);
             hiloCliente = new ThreadJugador(socketRef, refPantalla, refPantalla2);
             hiloCliente.nombre = nombre;

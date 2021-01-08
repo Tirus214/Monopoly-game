@@ -165,7 +165,7 @@ public class PantallaJugador extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(204, 204, 204));
 
         lblDado1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblDado1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/dado1.png"))); // NOI18N
+        lblDado1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/dado3.png"))); // NOI18N
 
         lblDado2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblDado2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/dado5.png"))); // NOI18N
