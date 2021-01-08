@@ -31,6 +31,7 @@ public class Cliente {
         refPantalla.setRefCliente(this);
         this.imagen = imagen;
         this.nombre = nombre;
+        admin = false;
     }
     
     public void conectar(){

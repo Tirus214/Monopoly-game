@@ -18,10 +18,11 @@ import java.util.ArrayList;
 public class Servidor{
     
     public ArrayList<ThreadServidor> conexiones;
-    public boolean running = true;
+    public boolean running;
     private ServerSocket srv;
 
     public Servidor() {
+        running = true;
         conexiones = new ArrayList<ThreadServidor>();
     }
     
@@ -56,7 +57,7 @@ public class Servidor{
     
     void iniciarJuego(){
         for (int i = 0; i < conexiones.size(); i++) {
-            conexiones.get(i);
+            conexiones.get(i).start();
         }
     }
     

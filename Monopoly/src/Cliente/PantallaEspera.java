@@ -19,19 +19,18 @@ public class PantallaEspera extends javax.swing.JFrame {
     public PantallaEspera() {
         pantallaJ = new PantallaJugador();
         cliente = new Cliente(pantallaJ, this, "", "");
-        serAdmin();
         initComponents();
     }
     
     
     public void serAdmin(){
-        if(cliente.admin) btn1.setEnabled(true);
-        else btn1.setEnabled(false);
+        if(!cliente.admin) btn1.setEnabled(false);
     }
     
     
     public void setCliente(Cliente c){
         cliente = c;
+        serAdmin();
     }
     
 

@@ -17,13 +17,8 @@ public class MainCliente {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        try{
         PantallaInicial pantalla = new PantallaInicial();
         pantalla.setVisible(true); 
-        }
-        catch(Exception e){
-            
-        }
     }
     
 }
