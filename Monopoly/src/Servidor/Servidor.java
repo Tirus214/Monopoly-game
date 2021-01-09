@@ -34,7 +34,7 @@ public class Servidor{
         int contadorDeConexiones = 0;
         try{
             srv = new ServerSocket(35577);
-            while (running || contadorDeConexiones < 6){
+            while (running && contadorDeConexiones < 6){
                 Socket nuevaConexion = srv.accept();
                 contadorDeConexiones++;
                 
@@ -44,30 +44,27 @@ public class Servidor{
                 newThread.start();
                 
                 //indica que el primer jugador es el admin
-                if (contadorDeConexiones >= 2){
+                if (contadorDeConexiones == 2){
                     conexiones.get(0).paqueteEscritura.admin = true;
                     conexiones.get(0).escribir();
-                    //newThread.paqueteEscritura.admin = true;
-                    //newThread.escribir();
                 }
                 
-            }
-            iniciarJuego();
+            } //end running
+            iniciarJuego();  //envia la señal para que se inicie el juego en todos los clientes
         }
         catch(Exception e)
         {
             System.out.println(e.getMessage());
         }
     }
+
     
-    
-    void iniciarJuego(){
-        for (int i = 0; i < conexiones.size(); i++) {
-            conexiones.get(i).start();
+    public void iniciarJuego(){
+        for(int i = 0; i < conexiones.size(); i++){
+            conexiones.get(i).paqueteEscritura.iniciarPartida = true;
+            conexiones.get(i).escribir();
         }
     }
-    
-    
     
     
     

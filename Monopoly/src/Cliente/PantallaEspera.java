@@ -76,6 +76,8 @@ public class PantallaEspera extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIniciarActionPerformed
+        //este boton se le activa solo al admin cuando ya hay más de dos conexiones,
+        //entonces aquí no hay que validar nada
         cliente.hiloCliente.iniciarPartida();
     }//GEN-LAST:event_btnIniciarActionPerformed
 

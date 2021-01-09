@@ -61,26 +61,26 @@ public class ThreadJugador extends Thread{
         while (running){
             try {
                 paqueteLectura = (Paquete) reader.readObject(); // espera hasta recibir un paquete de datos
+                System.out.println(nombre + " leyó un paquete.");
                 
-                if(paqueteLectura.admin){  
+                if(paqueteLectura.admin){ 
+                    System.out.println("EL ADMIN FUE ASIGNADO.");
+                    this.admin = true;
                     refPantalla2.btnIniciar.setEnabled(true);
                 }
-                               
-                
-                //******************************************************************
-                else if(paqueteLectura.iniciarTodos){
+                else if(paqueteLectura.iniciarPartida){
+                    System.out.println("SE INICIÓ LA PANTALLA JUGADOR: " + nombre);
                     refPantalla2.setVisible(false);
                     refPantalla.setVisible(true);
                 }
-                else if(paqueteLectura.hipotecar){
-                    
+                
+                //******************************************************************
+                
+                else{
+                    System.out.println(nombre + " SE METIÓ AL ELSE EN THREADJUGADOR.");
                 }
-                else if(paqueteLectura.pasarSalida){
-                    
-                }
-                else if(paqueteLectura.tirar){
-                    
-                }
+                
+                
                 
             } catch (IOException ex) {
                 System.out.println("Error-1");
@@ -88,9 +88,9 @@ public class ThreadJugador extends Thread{
                 System.out.println("Error-2");
                 Logger.getLogger(ThreadJugador.class.getName()).log(Level.SEVERE, null, ex);
             }
-            
             paqueteEscritura.clear();
             paqueteLectura.clear();
+            
         }
     }
     
@@ -99,6 +99,9 @@ public class ThreadJugador extends Thread{
         if(admin){
             paqueteEscritura.iniciarPartida = true;
             escribir();
+        }
+        else{
+            System.out.println(this.nombre + "no es admin.");
         }
     }
     

@@ -44,25 +44,15 @@ class ThreadServidor extends Thread{
             try {
                 paqueteLectura = (Paquete) reader.readObject(); // esperar hasta que reciba un entero
                 
-                if(paqueteLectura.iniciarJugador){
-                    System.out.println(paqueteLectura.nombre + "    " + paqueteLectura.imagen);
+                if(paqueteLectura.iniciarPartida){
+                    server.stopserver();    //para que ya no se acepten más conexiones
+                    server.iniciarJuego();  //para que se inicie el juego
+                    //NOTA: con stopServer no es suficiente para comenzar el juego, xq el servidor está 
+                    //pegado esperando un paquete
                 }
                 
-                if(paqueteLectura.iniciarPartida){
-                    server.running = false; //para que ya no se acepten más conexiones y se inicie el juego                   
-                }
-                else if(paqueteLectura.comprar){
-                    
-                }
-                else if(paqueteLectura.hipotecar){
-                    
-                }
-                else if(paqueteLectura.pasarSalida){
-                    
-                }
-                else if(paqueteLectura.tirar){
-                    
-                }
+                
+                
                 
             } catch (IOException ex) {
                 
@@ -72,6 +62,7 @@ class ThreadServidor extends Thread{
             
             paqueteEscritura.clear();
             paqueteLectura.clear();
+            
         }
     }
     
