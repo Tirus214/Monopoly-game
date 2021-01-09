@@ -12,7 +12,8 @@ import java.io.Serializable;
  * @author Jean Paul
  */
 public class Paquete implements Serializable{
-    public String nombre;
+    public String nombre1;
+    public String nombre2;
     public String imagen;
     public String mensaje;
     public boolean sms;
@@ -28,13 +29,17 @@ public class Paquete implements Serializable{
     //******SI AGREGAN ALGO MÁS, LO AGREGAN DE AQUI PARA ABAJO*****
     //******PARA QUE ESTE ORDENADO CON RESPECTO A LO QUE YA INICIALIZAMOS EN EL CONSTRUCTOR
     public boolean activarBotonIniciar;
+    public boolean pagarAlquiler;
+    public boolean salida;
+    public boolean colocarCasa;
     
     public Paquete(){
         clear();
     }
     
     public void clear(){
-        nombre = "";
+        nombre1 = "";
+        nombre2 = "";
         imagen = "";
         mensaje = "";
         sms = false;
@@ -49,5 +54,8 @@ public class Paquete implements Serializable{
         numero = 0;
         //******SI AGREGAN ALGO MÁS, LO AGREGAN DE AQUI PARA ABAJO*****
         activarBotonIniciar = false;
+        pagarAlquiler = false;
+        salida = false;
+        colocarCasa = true;
     }
 }

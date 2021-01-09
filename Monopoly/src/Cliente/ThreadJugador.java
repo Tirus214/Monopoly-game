@@ -109,7 +109,7 @@ public class ThreadJugador extends Thread{
     public void tirarDados(){
         paqueteEscritura.tirar = true;
         paqueteEscritura.numero = (int) Math.floor(Math.random()*(12-2+1)+2);
-        paqueteEscritura.nombre = nombre;
+        paqueteEscritura.nombre1 = nombre;
         escribir();
     }
     
@@ -123,4 +123,32 @@ public class ThreadJugador extends Thread{
         paqueteEscritura.clear();
     }
     
+    public void hipotecar(String name){
+        paqueteEscritura.hipotecar = true;
+        paqueteEscritura.nombre1 = this.nombre;
+        paqueteEscritura.nombre2 = name;
+        escribir();
+    }
+    
+    public void pagarAlquiler(){
+        paqueteEscritura.pagarAlquiler = true;
+        paqueteEscritura.nombre1 = nombre;
+        escribir();
+    }
+    
+    public void cobrarSalida(){
+        paqueteEscritura.salida = true;
+        paqueteEscritura.nombre1 = nombre;
+        escribir();
+    }
+    
+    public void colocarCasa(){
+        paqueteEscritura.colocarCasa = true;
+        paqueteEscritura.nombre1 = nombre;
+        escribir();
+    }
+    
+    public void salirCarcel(){
+        
+    }
 }
