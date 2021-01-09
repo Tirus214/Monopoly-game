@@ -51,6 +51,7 @@ public class PantallaJugador extends javax.swing.JFrame {
     
     public void setNombreJugador(String nombre){
         this.nombre = nombre;
+        this.setTitle(nombre);
         lblNombreJugador.setText(nombre);
     }
     

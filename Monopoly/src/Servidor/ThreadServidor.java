@@ -12,6 +12,7 @@ import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -48,8 +49,7 @@ class ThreadServidor extends Thread{
                 }
                 
                 if(paqueteLectura.iniciarPartida){
-                    server.running = false;
-                    
+                    server.running = false; //para que ya no se acepten más conexiones y se inicie el juego                   
                 }
                 else if(paqueteLectura.comprar){
                     
@@ -75,10 +75,8 @@ class ThreadServidor extends Thread{
         }
     }
     
-    
-    
-    
-    public void escribir(){
+    //Para escribir paquetes en el socket y que el cliente las lea
+    public void escribir(){ 
         try {
             writer.writeObject(paqueteEscritura);
         } catch (IOException ex) {
@@ -90,7 +88,7 @@ class ThreadServidor extends Thread{
     
     
     
-    public void iniciarTodos(){
+    public void iniciarTodos(){  
         paqueteLectura.iniciarTodos = true;
         try {
             writer.writeObject(paqueteLectura);

@@ -57,15 +57,17 @@ public class ThreadJugador extends Thread{
     }
     
     public void run (){ 
-        //sendData();  //envia la info del cliente y la coloca en la pantalla
         
         while (running){
             try {
                 paqueteLectura = (Paquete) reader.readObject(); // espera hasta recibir un paquete de datos
                 
-                if(paqueteLectura.admin){  //si es admin, se le activa el botón de comenzar
+                if(paqueteLectura.admin){  
                     refPantalla2.btnIniciar.setEnabled(true);
                 }
+                               
+                
+                //******************************************************************
                 else if(paqueteLectura.iniciarTodos){
                     refPantalla2.setVisible(false);
                     refPantalla.setVisible(true);
@@ -93,26 +95,6 @@ public class ThreadJugador extends Thread{
     }
     
     
-    public void sendData(){
-        //coloca los datos en el paquete
-        paqueteEscritura.imagen = imagen;
-        paqueteEscritura.nombre = nombre;
-        paqueteEscritura.iniciarJugador = true;
-        
-        try {
-            writer.writeObject(paqueteEscritura);  //envía los datos al server
-            refPantalla.setImagenFicha(imagen);
-            refPantalla.setNombreJugador(nombre);
-            
-        } catch (IOException ex) {
-            //Logger.getLogger(ThreadJugador.class.getName()).log(Level.SEVERE, null, ex);
-            System.out.println("Se cayó en sendData");
-        }
-        
-        paqueteEscritura.clear(); //limpia el paquete para en siguiente envío de datos
-    }
-    
-    
     public void iniciarPartida(){
         if(admin){
             paqueteEscritura.iniciarPartida = true;
@@ -131,10 +113,10 @@ public class ThreadJugador extends Thread{
     
     public void escribir(){
         try {
-                writer.writeObject(paqueteEscritura);
-            } catch (IOException ex) {
-                Logger.getLogger(ThreadJugador.class.getName()).log(Level.SEVERE, null, ex);
-            }
+            writer.writeObject(paqueteEscritura);
+        } catch (IOException ex) {
+            Logger.getLogger(ThreadJugador.class.getName()).log(Level.SEVERE, null, ex);
+        }
         paqueteEscritura.clear();
     }
     

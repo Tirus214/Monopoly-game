@@ -27,7 +27,7 @@ public class Paquete implements Serializable{
     public int numero;
     //******SI AGREGAN ALGO MÁS, LO AGREGAN DE AQUI PARA ABAJO*****
     //******PARA QUE ESTE ORDENADO CON RESPECTO A LO QUE YA INICIALIZAMOS EN EL CONSTRUCTOR
-    
+    public boolean activarBotonIniciar;
     
     public Paquete(){
         clear();
@@ -48,5 +48,6 @@ public class Paquete implements Serializable{
         admin = false;
         numero = 0;
         //******SI AGREGAN ALGO MÁS, LO AGREGAN DE AQUI PARA ABAJO*****
+        activarBotonIniciar = false;
     }
 }

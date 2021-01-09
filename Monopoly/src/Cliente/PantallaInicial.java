@@ -392,15 +392,23 @@ public class PantallaInicial extends javax.swing.JFrame {
         this.nombre = txfNombre.getText(); //obtiene el nombre
         if(imagen != ""){
             
-            this.setVisible(false); 
-            pantallaJ.setImagenFicha(imagen);     //coloca la imagen de la ficha en la ventana jugador
-            pantallaE.pantallaJ = this.pantallaJ; //envia la pantalla jugador a pantalla de espera
+            //se oculta la pantalla inicial
+            this.setVisible(false);   
             
+            //setea ficha y nombre de la pantalla Jugador
+            pantallaJ.setImagenFicha(imagen);
+            pantallaJ.setNombreJugador(nombre);
+
             //crea el cliente y lo conecta
             Cliente c = new Cliente(pantallaJ, pantallaE, nombre, imagen);
             c.conectar();
             
-            pantallaE.setVisible(true); //muestra la pantalla de espera
+            //setea cliente y pantallaJ en la pantalla de espera
+            pantallaE.pantallaJ = this.pantallaJ;
+            pantallaE.cliente = c;
+            
+            //muestra la pantalla de espera
+            pantallaE.setVisible(true);
         }
         else{
             JOptionPane.showMessageDialog(this, "Debe seleccionar una ficha.");
