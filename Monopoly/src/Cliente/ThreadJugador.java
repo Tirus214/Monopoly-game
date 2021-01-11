@@ -149,6 +149,8 @@ public class ThreadJugador extends Thread{
     }
     
     public void salirCarcel(){
-        
+        paqueteEscritura.salirCarcel = true;
+        paqueteEscritura.nombre1 = nombre;
+        escribir();
     }
 }

@@ -32,6 +32,7 @@ public class Paquete implements Serializable{
     public boolean pagarAlquiler;
     public boolean salida;
     public boolean colocarCasa;
+    public boolean salirCarcel;
     
     public Paquete(){
         clear();
@@ -56,6 +57,7 @@ public class Paquete implements Serializable{
         activarBotonIniciar = false;
         pagarAlquiler = false;
         salida = false;
-        colocarCasa = true;
+        colocarCasa = false;
+        salirCarcel = false;
     }
 }

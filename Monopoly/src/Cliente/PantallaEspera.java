@@ -18,6 +18,8 @@ public class PantallaEspera extends javax.swing.JFrame {
     public PantallaEspera() {
         //el cliente y la pantalla se setean desde pantalla inicial
         initComponents();
+        pantallaJ = new PantallaJugador();
+        cliente = new Cliente(pantallaJ, this, "", "");
     }
     
     public void setCliente(Cliente cliente){
@@ -42,7 +44,6 @@ public class PantallaEspera extends javax.swing.JFrame {
         jLabel1.setText("Esperando Jugadores...");
 
         btnIniciar.setText("Iniciar Juego");
-        btnIniciar.setEnabled(false);
         btnIniciar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnIniciarActionPerformed(evt);
@@ -53,32 +54,33 @@ public class PantallaEspera extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(65, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(59, 59, 59))
             .addGroup(layout.createSequentialGroup()
-                .addGap(76, 76, 76)
-                .addComponent(btnIniciar)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(65, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(59, 59, 59))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(btnIniciar)
+                        .addGap(84, 84, 84))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(60, 60, 60)
                 .addComponent(jLabel1)
-                .addGap(30, 30, 30)
-                .addComponent(btnIniciar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(37, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                .addComponent(btnIniciar)
+                .addGap(35, 35, 35))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIniciarActionPerformed
-        //este boton se le activa solo al admin cuando ya hay más de dos conexiones,
-        //entonces aquí no hay que validar nada
         cliente.hiloCliente.iniciarPartida();
+        this.setVisible(false);
+        pantallaJ.setVisible(true);
     }//GEN-LAST:event_btnIniciarActionPerformed
 
     /**

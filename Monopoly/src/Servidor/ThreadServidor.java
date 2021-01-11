@@ -66,6 +66,7 @@ class ThreadServidor extends Thread{
         }
     }
     
+    
     //Para escribir paquetes en el socket y que el cliente las lea
     public void escribir(){ 
         try {
