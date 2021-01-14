@@ -5,10 +5,18 @@
  */
 package Servidor;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Jean Paul
  */
+
 public class Tablero {
-    
+    public ArrayList<Casilla> arrayCasillas;
+
+    public Tablero(){
+        this.arrayCasillas = new ArrayList<>();
+    }
+
 }

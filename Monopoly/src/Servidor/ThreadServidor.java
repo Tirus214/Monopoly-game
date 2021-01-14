@@ -12,7 +12,6 @@ import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JOptionPane;
 
 /**
  *
@@ -38,7 +37,7 @@ class ThreadServidor extends Thread{
         writer = new ObjectOutputStream(socketRef.getOutputStream());
     }
     
-    public void run (){
+    public void run(){
         
         while (running){
             try {
@@ -76,8 +75,6 @@ class ThreadServidor extends Thread{
         }
         paqueteEscritura.clear();
     }
-    
-    
     
     
     public void iniciarTodos(){  

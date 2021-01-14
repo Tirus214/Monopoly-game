@@ -5,14 +5,18 @@
  */
 package Servidor;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Jean Paul
  */
 abstract public class Casilla {
-    public String nombre;
+    public String nombreCasilla;
+    public ArrayList<String> jugadores;
     
     public Casilla(String nombre){
-        this.nombre = nombre;
+        this.nombreCasilla = nombre;
+        jugadores = new ArrayList<String>();
     }
 }

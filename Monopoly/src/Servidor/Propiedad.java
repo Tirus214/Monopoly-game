@@ -16,7 +16,6 @@ public class Propiedad extends Casilla{
     
     public Propiedad(String nombre, int costo){
         super(nombre);
-        this.nombre = nombre;
         this.costo = costo;
         this.libre = true;
         this.owner = "";
